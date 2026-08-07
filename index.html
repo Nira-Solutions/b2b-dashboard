@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>B2B Morning Dashboard — Teatower</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f5f7f6; --card: #ffffff; --line: #e3e8e5;
+    --ink: #16211c; --ink-2: #55635c; --ink-3: #869089;
+    --brand: #2d6a4f; --brand-soft: #eef6f1;
+    --up: #1b7f4b; --down: #c0392b;
+    --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a;
+    --shadow: 0 1px 2px rgba(16,32,24,.06), 0 4px 14px rgba(16,32,24,.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      --bg: #12140f; --card: #1a1c18; --line: #2c302a;
+      --ink: #f2f4f0; --ink-2: #b6bdb4; --ink-3: #7d857b;
+      --brand: #6fbb92; --brand-soft: #1f2b24;
+      --up: #57c98a; --down: #e8756a;
+      --s1: #3987e5; --s2: #d95926; --s3: #199e70;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.3);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #12140f; --card: #1a1c18; --line: #2c302a;
+    --ink: #f2f4f0; --ink-2: #b6bdb4; --ink-3: #7d857b;
+    --brand: #6fbb92; --brand-soft: #1f2b24;
+    --up: #57c98a; --down: #e8756a;
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.3);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 1rem .9rem 3rem;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg); color: var(--ink);
+    max-width: 860px; margin-inline: auto;
+    -webkit-text-size-adjust: 100%;
+  }
+  header { margin-bottom: 1.1rem; }
+  .kicker { font-size: .72rem; letter-spacing: .09em; text-transform: uppercase;
+             color: var(--brand); font-weight: 700; }
+  h1 { font-size: 1.35rem; margin: .15rem 0 .1rem; letter-spacing: -.01em; }
+  .sub { color: var(--ink-2); font-size: .86rem; }
+
+  .hero {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 1.1rem 1.15rem; box-shadow: var(--shadow); margin-bottom: .8rem;
+  }
+  .hero-lab { font-size: .78rem; color: var(--ink-2); text-transform: uppercase;
+               letter-spacing: .06em; font-weight: 600; }
+  .hero-val { font-size: 2.6rem; font-weight: 700; line-height: 1.05;
+               letter-spacing: -.025em; margin: .2rem 0 .35rem;
+               font-variant-numeric: tabular-nums; }
+  .hero-val small { font-size: 1.1rem; font-weight: 600; color: var(--ink-2); }
+  .delta { font-size: .85rem; font-weight: 700; margin-right: .5rem; }
+  .delta.up { color: var(--up); } .delta.down { color: var(--down); }
+  .delta.flat { color: var(--ink-3); font-weight: 600; }
+  .delta-ctx { font-size: .8rem; color: var(--ink-2); }
+  .hero-n { font-size: .82rem; color: var(--ink-2); margin-top: .45rem; }
+
+  .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem;
+            margin-bottom: .8rem; }
+  @media (max-width: 520px) { .tiles { grid-template-columns: 1fr; } }
+  .tile { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+           padding: .75rem .85rem; box-shadow: var(--shadow); }
+  .tile-lab { display: flex; align-items: center; gap: .4rem; font-size: .78rem;
+               color: var(--ink-2); font-weight: 600; }
+  .tile-lab i { width: 10px; height: 10px; border-radius: 3px; flex: none; }
+  .tile.s1 .tile-lab i { background: var(--s1); }
+  .tile.s2 .tile-lab i { background: var(--s2); }
+  .tile.s3 .tile-lab i { background: var(--s3); }
+  .tile-val { font-size: 1.35rem; font-weight: 700; margin: .25rem 0 .1rem;
+               font-variant-numeric: tabular-nums; letter-spacing: -.015em; }
+  .tile-sub { font-size: .75rem; color: var(--ink-3); }
+
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+           box-shadow: var(--shadow); margin-bottom: .8rem; overflow: hidden; }
+  .card-head { display: flex; justify-content: space-between; align-items: baseline;
+                gap: .6rem; flex-wrap: wrap; padding: .8rem .95rem .55rem; }
+  .card-head h2 { font-size: .95rem; margin: 0; letter-spacing: -.005em; }
+  .legend { display: flex; gap: .7rem; flex-wrap: wrap; }
+  .lg { display: inline-flex; align-items: center; gap: .3rem;
+         font-size: .74rem; color: var(--ink-2); font-weight: 600; }
+  .lg i { width: 10px; height: 10px; border-radius: 3px; }
+  .lg i.s1 { background: var(--s1); } .lg i.s2 { background: var(--s2); }
+  .lg i.s3 { background: var(--s3); }
+
+  .chart-scroll { overflow-x: auto; padding: 0 .5rem .5rem; }
+  .chart { width: 100%; min-width: 460px; height: auto; display: block; }
+  .chart .baseline { stroke: var(--line); stroke-width: 1; }
+  .chart .seg.s1 { fill: var(--s1); } .chart .seg.s2 { fill: var(--s2); }
+  .chart .seg.s3 { fill: var(--s3); }
+  .chart .empty { fill: var(--ink-3); opacity: .45; }
+  .chart .hit { fill: transparent; }
+  .chart .bar:hover .seg { opacity: .78; }
+  .chart .vlabel { font-size: 11px; font-weight: 600; fill: var(--ink-2);
+                    text-anchor: middle; font-variant-numeric: tabular-nums; }
+  .chart .vlabel.today { fill: var(--ink); font-weight: 700; }
+  .chart .xlabel { font-size: 10.5px; fill: var(--ink-3); text-anchor: middle; }
+  .chart .xlabel.today { fill: var(--ink); font-weight: 700; }
+  .chart .xsub { font-size: 9px; fill: var(--brand); text-anchor: middle;
+                  font-weight: 700; text-transform: uppercase; letter-spacing: .05em; }
+
+  .mtd { display: flex; gap: .5rem; flex-wrap: wrap; padding: 0 .95rem .9rem; }
+  .mini { display: inline-flex; align-items: center; gap: .35rem;
+           background: var(--bg); border: 1px solid var(--line); border-radius: 999px;
+           padding: .3rem .7rem; font-size: .78rem; }
+  .mini i { width: 9px; height: 9px; border-radius: 2px; }
+  .mini.s1 i { background: var(--s1); } .mini.s2 i { background: var(--s2); }
+  .mini.s3 i { background: var(--s3); }
+  .mini-lab { color: var(--ink-2); }
+  .mini-val { font-weight: 700; font-variant-numeric: tabular-nums; }
+
+  .table-scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: .84rem; }
+  th { text-align: left; font-size: .7rem; text-transform: uppercase;
+        letter-spacing: .05em; color: var(--ink-3); font-weight: 700;
+        padding: .35rem .95rem .45rem; border-bottom: 1px solid var(--line);
+        white-space: nowrap; }
+  td { padding: .5rem .95rem; border-bottom: 1px solid var(--line);
+        vertical-align: middle; }
+  tr:last-child td { border-bottom: none; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums;
+                    white-space: nowrap; }
+  td.strong { font-weight: 700; }
+  .refund { color: var(--down); }
+  .chip { display: inline-block; padding: 1px 7px; border-radius: 5px;
+           font-size: .68rem; font-weight: 700; color: #fff; white-space: nowrap; }
+  .chip.s1 { background: var(--s1); } .chip.s2 { background: var(--s2); }
+  .chip.s3 { background: var(--s3); }
+  .age { font-weight: 700; font-size: .78rem; }
+  .age.fresh { color: var(--up); }
+  .age.mid { color: var(--ink-2); }
+  .age.old { color: var(--down); }
+  .note { font-size: .74rem; color: var(--ink-3); padding: .55rem .95rem .75rem;
+           margin: 0; }
+  .empty-msg { font-size: .84rem; color: var(--ink-3); padding: 0 .95rem 1rem;
+                margin: 0; }
+  footer { margin-top: 1.4rem; font-size: .74rem; color: var(--ink-3);
+            text-align: center; line-height: 1.6; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="kicker">Teatower &middot; B2B Morning Dashboard</div>
+  <h1>Jeudi 6 aout 2026</h1>
+  <div class="sub">Factures B2B postees — GMS, Horeca, Revendeurs</div>
+</header>
+
+<div class="hero">
+  <div class="hero-lab">Chiffre d'affaires du jour</div>
+  <div class="hero-val">3 644,53 <small>€ HT</small></div>
+  <div><span class="delta up">&#9650; +327,1 %</span><span class="delta-ctx">vs moyenne 853 €</span></div>
+  <div class="hero-n">15 facture(s) B2B postee(s)</div>
+</div>
+
+<div class="tiles">
+    <div class="tile s1">
+      <div class="tile-lab"><i></i>GMS</div>
+      <div class="tile-val">2 407 €</div>
+      <div class="tile-sub">66 % du jour · 10 fact.</div>
+    </div>
+    <div class="tile s2">
+      <div class="tile-lab"><i></i>Horeca</div>
+      <div class="tile-val">193 €</div>
+      <div class="tile-sub">5 % du jour · 2 fact.</div>
+    </div>
+    <div class="tile s3">
+      <div class="tile-lab"><i></i>Revendeurs</div>
+      <div class="tile-val">1 044 €</div>
+      <div class="tile-sub">29 % du jour · 3 fact.</div>
+    </div></div>
+
+
+<section class="card">
+  <div class="card-head">
+    <h2>Tendance — 5 derniers memes jours de semaine</h2>
+    <div class="legend"><span class="lg"><i class="s1"></i>GMS</span><span class="lg"><i class="s2"></i>Horeca</span><span class="lg"><i class="s3"></i>Revendeurs</span></div>
+  </div>
+  <div class="chart-scroll">
+    <svg class="chart" viewBox="0 0 680 200" role="img"
+         aria-label="Chiffre d'affaires B2B HT par jour, empile par canal">
+      <line class="baseline" x1="8" y1="166"
+            x2="672" y2="166"></line>
+      <g class="bar"><rect class="seg s1" x="35.3" y="102.4" width="56.0" height="61.6" rx="3"><title>02/07/2026 · GMS — 1 655 € HT</title></rect><rect class="hit" x="8.0" y="26" width="110.7" height="140"><title>02/07/2026 — 1 655 € HT · 4 facture(s)</title></rect></g><text class="vlabel" x="63.3" y="95.4">1 655</text><text class="xlabel" x="63.3" y="184.0">02/07</text><g class="bar"><rect class="seg s1" x="146.0" y="117.3" width="56.0" height="46.7" rx="3"><title>09/07/2026 · GMS — 1 267 € HT</title></rect><rect class="hit" x="118.7" y="26" width="110.7" height="140"><title>09/07/2026 — 1 267 € HT · 6 facture(s)</title></rect></g><text class="vlabel" x="174.0" y="110.3">1 267</text><text class="xlabel" x="174.0" y="184.0">09/07</text><g class="bar"><title>16/07/2026 — -63 € HT · 3 facture(s)</title><rect class="empty" x="256.7" y="163.0" width="56.0" height="3" rx="1.5"></rect><rect class="hit" x="229.3" y="26" width="110.7" height="140"></rect></g><text class="vlabel" x="284.7" y="159.0">-63</text><text class="xlabel" x="284.7" y="184.0">16/07</text><g class="bar"><title>23/07/2026 — 0 € HT · 0 facture(s)</title><rect class="empty" x="367.3" y="163.0" width="56.0" height="3" rx="1.5"></rect><rect class="hit" x="340.0" y="26" width="110.7" height="140"></rect></g><text class="vlabel" x="395.3" y="159.0">0</text><text class="xlabel" x="395.3" y="184.0">23/07</text><g class="bar"><rect class="seg s1" x="478.0" y="112.0" width="56.0" height="52.0" rx="3"><title>30/07/2026 · GMS — 1 407 € HT</title></rect><rect class="hit" x="450.7" y="26" width="110.7" height="140"><title>30/07/2026 — 1 407 € HT · 3 facture(s)</title></rect></g><text class="vlabel" x="506.0" y="105.0">1 407</text><text class="xlabel" x="506.0" y="184.0">30/07</text><g class="bar today"><rect class="seg s1" x="588.7" y="73.5" width="56.0" height="90.5" rx="3"><title>06/08/2026 · GMS — 2 407 € HT</title></rect><rect class="seg s2" x="588.7" y="66.1" width="56.0" height="5.4" rx="3"><title>06/08/2026 · Horeca — 193 € HT</title></rect><rect class="seg s3" x="588.7" y="26.0" width="56.0" height="38.1" rx="3"><title>06/08/2026 · Revendeurs — 1 044 € HT</title></rect><rect class="hit" x="561.3" y="26" width="110.7" height="140"><title>06/08/2026 — 3 645 € HT · 15 facture(s)</title></rect></g><text class="vlabel today" x="616.7" y="19.0">3 645</text><text class="xlabel today" x="616.7" y="184.0">06/08</text><text class="xsub" x="616.7" y="196.0">hier</text>
+    </svg>
+  </div>
+</section>
+
+<section class="card">
+  <div class="card-head">
+    <h2>Mois en cours — depuis le 01/08</h2>
+    <div class="lg" style="font-weight:700;color:var(--ink)">
+      9 167,70 € HT · 35 fact.
+    </div>
+  </div>
+  <div class="mtd"><div class="mini s1"><i></i><span class="mini-lab">GMS</span><span class="mini-val">4 566 €</span></div><div class="mini s2"><i></i><span class="mini-lab">Horeca</span><span class="mini-val">964 €</span></div><div class="mini s3"><i></i><span class="mini-lab">Revendeurs</span><span class="mini-val">3 638 €</span></div></div>
+</section>
+
+
+<section class="card">
+  <div class="card-head"><h2>Top clients du jour</h2></div>
+  <div class="table-scroll">
+    <table><thead><tr><th class="">Client</th><th class="">Canal</th><th class="num">Fact.</th><th class="num strong">CA HT</th></tr></thead><tbody><tr><td class="">Carrefour Belgium</td><td class=""><span class="chip s1">GMS</span></td><td class="num">4</td><td class="num strong">858,19 €</td></tr><tr><td class="">Nouvel Air Coiffure</td><td class=""><span class="chip s3">Revendeurs</span></td><td class="num">1</td><td class="num strong">548,69 €</td></tr><tr><td class="">Joffrey Helson Menuiserie SRL</td><td class=""><span class="chip s3">Revendeurs</span></td><td class="num">1</td><td class="num strong">495,27 €</td></tr><tr><td class="">DelEmbourg SRL - Delhaize Embourg</td><td class=""><span class="chip s1">GMS</span></td><td class="num">1</td><td class="num strong">413,72 €</td></tr><tr><td class="">D-trois SRL - Proxy Delhaize Saint-Séverin</td><td class=""><span class="chip s1">GMS</span></td><td class="num">1</td><td class="num strong">336,48 €</td></tr><tr><td class="">Delhaize Le Lion S.A, Affilié 048900 - Ad Spa</td><td class=""><span class="chip s1">GMS</span></td><td class="num">1</td><td class="num strong">324,59 €</td></tr><tr><td class="">Delhaize Le Lion S.A</td><td class=""><span class="chip s1">GMS</span></td><td class="num">2</td><td class="num strong">270,77 €</td></tr><tr><td class="">BARCHONEW SRL - Delhaize Barchon</td><td class=""><span class="chip s1">GMS</span></td><td class="num">1</td><td class="num strong">203,40 €</td></tr></tbody></table>
+  </div>
+  
+</section>
+
+<section class="card">
+  <div class="card-head"><h2>Top produits du jour</h2></div>
+  <div class="table-scroll">
+    <table><thead><tr><th class="">Produit</th><th class="num">Qte</th><th class="num strong">CA HT</th></tr></thead><tbody><tr><td class="">[GI0735] Pêche de Vigne - BIO glacée</td><td class="num">81</td><td class="num strong">508,17 €</td></tr><tr><td class="">[GI0820] Marrakech Sunset - BIO glacé</td><td class="num">72</td><td class="num strong">451,71 €</td></tr><tr><td class="">[GI0634] Gourmandise glacée</td><td class="num">62</td><td class="num strong">388,96 €</td></tr><tr><td class="">[GI0832] La Nana de Wépion glacée</td><td class="num">58</td><td class="num strong">363,87 €</td></tr><tr><td class="">[GI0916] Vergers d’Été: saveurs: Pomme - Poire</td><td class="num">37</td><td class="num strong">232,12 €</td></tr><tr><td class="">[I0279] Le panier de grand maman (20 infusettes)</td><td class="num">31</td><td class="num strong">225,18 €</td></tr><tr><td class="">[GI0912] Passion Exotique - Infusion de fruits : Mangue - Passion</td><td class="num">31</td><td class="num strong">194,48 €</td></tr><tr><td class="">[I0735] Pêche de vigne - BIO (20 infusettes)</td><td class="num">22</td><td class="num strong">159,81 €</td></tr><tr><td class="">[I0751] I love you (20 infusettes)</td><td class="num">16</td><td class="num strong">116,23 €</td></tr><tr><td class="">[I0868] Citron meringué (20 infusettes)</td><td class="num">15</td><td class="num strong">108,97 €</td></tr></tbody></table>
+  </div>
+  
+</section>
+
+<section class="card">
+  <div class="card-head"><h2>Detail des 15 factures du jour</h2></div>
+  <div class="table-scroll">
+    <table><thead><tr><th class="">Piece</th><th class="">Client</th><th class="">Canal</th><th class="">Origine</th><th class="num strong">HT</th></tr></thead><tbody><tr><td class="">INV/2026/03764</td><td class="">Nouvel Air Coiffure</td><td class=""><span class="chip s3">Revendeurs</span></td><td class="">S06070</td><td class="num strong"><span>548,69 €</span></td></tr><tr><td class="">INV/2026/03765</td><td class="">Joffrey Helson Menuiserie SRL</td><td class=""><span class="chip s3">Revendeurs</span></td><td class="">S06033</td><td class="num strong"><span>495,27 €</span></td></tr><tr><td class="">INV/2026/03754</td><td class="">Carrefour Belgium</td><td class=""><span class="chip s1">GMS</span></td><td class="">S06111</td><td class="num strong"><span>486,07 €</span></td></tr><tr><td class="">INV/2026/03753</td><td class="">Delhaize Le Lion S.A</td><td class=""><span class="chip s1">GMS</span></td><td class="">S06110</td><td class="num strong"><span>416,06 €</span></td></tr><tr><td class="">INV/2026/03752</td><td class="">DelEmbourg SRL - Delhaize Embourg</td><td class=""><span class="chip s1">GMS</span></td><td class="">S06107</td><td class="num strong"><span>413,72 €</span></td></tr><tr><td class="">INV/2026/03758</td><td class="">D-trois SRL - Proxy Delhaize Saint-Séverin</td><td class=""><span class="chip s1">GMS</span></td><td class="">S06116</td><td class="num strong"><span>336,48 €</span></td></tr><tr><td class="">INV/2026/03755</td><td class="">Delhaize Le Lion S.A, Affilié 048900 - Ad Spa</td><td class=""><span class="chip s1">GMS</span></td><td class="">S06112</td><td class="num strong"><span>324,59 €</span></td></tr><tr><td class="">INV/2026/03761</td><td class="">Carrefour Belgium</td><td class=""><span class="chip s1">GMS</span></td><td class="">S06106</td><td class="num strong"><span>315,98 €</span></td></tr><tr><td class="">INV/2026/03757</td><td class="">BARCHONEW SRL - Delhaize Barchon</td><td class=""><span class="chip s1">GMS</span></td><td class="">S06115</td><td class="num strong"><span>203,40 €</span></td></tr><tr><td class="">INV/2026/03762</td><td class="">Carrefour Belgium</td><td class=""><span class="chip s1">GMS</span></td><td class="">S06104</td><td class="num strong"><span>150,57 €</span></td></tr><tr><td class="">INV/2026/03763</td><td class="">Brasserie Demain</td><td class=""><span class="chip s2">Horeca</span></td><td class="">S06098</td><td class="num strong"><span>111,88 €</span></td></tr><tr><td class="">INV/2026/03760</td><td class="">La couronne</td><td class=""><span class="chip s2">Horeca</span></td><td class="">S06114</td><td class="num strong"><span>81,54 €</span></td></tr><tr><td class="">INV3/26-27/0023</td><td class="">Marketing Teatower</td><td class=""><span class="chip s3">Revendeurs</span></td><td class="">Waterloo/4265</td><td class="num strong"><span>0,00 €</span></td></tr><tr><td class="">RINV/26-27/0021</td><td class="">Carrefour Belgium</td><td class=""><span class="chip s1">GMS</span></td><td class="">—</td><td class="num strong"><span class="refund">-94,43 €</span></td></tr><tr><td class="">RINV/26-27/0020</td><td class="">Delhaize Le Lion S.A</td><td class=""><span class="chip s1">GMS</span></td><td class="">—</td><td class="num strong"><span class="refund">-145,29 €</span></td></tr></tbody></table>
+  </div>
+  
+</section>
+
+<section class="card">
+  <div class="card-head"><h2>Pipeline devis — 4 devis / 1 441 € HT</h2></div>
+  <div class="table-scroll">
+    <table><thead><tr><th class="">Devis</th><th class="">Client</th><th class="">Canal</th><th class="num">Age</th><th class="num strong">Montant HT</th></tr></thead><tbody><tr><td class="">S06092</td><td class="">Boulangerie Valentine</td><td class=""><span class="chip s3">Revendeurs</span></td><td class="num"><span class="age fresh">3 j</span></td><td class="num strong">826,41 €</td></tr><tr><td class="">S05571</td><td class="">Mix F&amp;B SRL</td><td class=""><span class="chip s3">Revendeurs</span></td><td class="num"><span class="age old">86 j</span></td><td class="num strong">544,81 €</td></tr><tr><td class="">S06118</td><td class="">SCTA srl - Sabrina Cacciatore</td><td class=""><span class="chip s2">Horeca</span></td><td class="num"><span class="age fresh">0 j</span></td><td class="num strong">70,00 €</td></tr><tr><td class="">S06006</td><td class="">GIMALEX SA - Delhaize Fragnée</td><td class=""><span class="chip s1">GMS</span></td><td class="num"><span class="age mid">24 j</span></td><td class="num strong">0,00 €</td></tr></tbody></table>
+  </div>
+  <p class="note">Devis en brouillon ou envoyes, non confirmes. Age = depuis la date du devis.</p>
+</section>
+
+<section class="card">
+  <div class="card-head"><h2>Factures en brouillon — 8 / 809 € HT</h2></div>
+  <div class="table-scroll">
+    <table><thead><tr><th class="">Piece</th><th class="">Client</th><th class="">Canal</th><th class="num strong">Montant HT</th></tr></thead><tbody><tr><td class="">(brouillon)</td><td class="">Sodexo Belgium NV</td><td class=""><span class="chip s2">Horeca</span></td><td class="num strong">750,00 €</td></tr><tr><td class="">(brouillon)</td><td class="">Restaurant La Gloriette - SPRL Baufau - Mr Olivier Bauche</td><td class=""><span class="chip s2">Horeca</span></td><td class="num strong">59,44 €</td></tr><tr><td class="">(brouillon)</td><td class="">TRL 13 SPRL - Amar AMARA</td><td class=""><span class="chip s2">Horeca</span></td><td class="num strong">0,00 €</td></tr><tr><td class="">(brouillon)</td><td class="">Banque Degroof Petercam sa</td><td class=""><span class="chip s2">Horeca</span></td><td class="num strong">0,00 €</td></tr><tr><td class="">(brouillon)</td><td class="">Cellmade / Prison De Marche</td><td class=""><span class="chip s3">Revendeurs</span></td><td class="num strong">0,00 €</td></tr><tr><td class="">(brouillon)</td><td class="">Maison Depouhon</td><td class=""><span class="chip s2">Horeca</span></td><td class="num strong">0,00 €</td></tr><tr><td class="">(brouillon)</td><td class="">Veepee Northern Europe</td><td class=""><span class="chip s3">Revendeurs</span></td><td class="num strong">0,00 €</td></tr><tr><td class="">(brouillon)</td><td class="">Cafes Delahaut</td><td class=""><span class="chip s2">Horeca</span></td><td class="num strong">0,00 €</td></tr></tbody></table>
+  </div>
+  <p class="note">A poster ou a arbitrer. Les brouillons a 0,00 € attendent une decision manuelle.</p>
+</section>
+
+<footer>
+  Genere le 07/08/2026 a 08h55
+  depuis Odoo (tea-tree).<br>
+  Montants HT. Avoirs comptes en negatif. Segmentation par tag client
+  GMS / Horeca / Revendeurs.
+</footer>
+
+</body>
+</html>

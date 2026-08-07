@@ -1,0 +1,514 @@
+{
+  "generated_at": "2026-08-07T08:55:34",
+  "target_date": "2026-08-06",
+  "target_label": "jeudi 6 aout 2026",
+  "target_short": "06/08/2026",
+  "channels": [
+    "GMS",
+    "Horeca",
+    "Revendeurs"
+  ],
+  "jour": {
+    "total_ht": 3644.53,
+    "nb_factures": 15,
+    "by_channel": {
+      "GMS": {
+        "ca": 2407.15,
+        "n": 10
+      },
+      "Horeca": {
+        "ca": 193.42,
+        "n": 2
+      },
+      "Revendeurs": {
+        "ca": 1043.96,
+        "n": 3
+      }
+    },
+    "factures": [
+      {
+        "id": 44040,
+        "name": "INV/2026/03764",
+        "date": "2026-08-06",
+        "channel": "Revendeurs",
+        "partner_id": 3162,
+        "partner": "Nouvel Air Coiffure",
+        "untaxed": 548.69,
+        "total": 581.62,
+        "origin": "S06070",
+        "is_refund": false
+      },
+      {
+        "id": 44041,
+        "name": "INV/2026/03765",
+        "date": "2026-08-06",
+        "channel": "Revendeurs",
+        "partner_id": 3009,
+        "partner": "Joffrey Helson Menuiserie SRL",
+        "untaxed": 495.27,
+        "total": 525.01,
+        "origin": "S06033",
+        "is_refund": false
+      },
+      {
+        "id": 44021,
+        "name": "INV/2026/03754",
+        "date": "2026-08-06",
+        "channel": "GMS",
+        "partner_id": 6596,
+        "partner": "Carrefour Belgium",
+        "untaxed": 486.07,
+        "total": 515.23,
+        "origin": "S06111",
+        "is_refund": false
+      },
+      {
+        "id": 44019,
+        "name": "INV/2026/03753",
+        "date": "2026-08-06",
+        "channel": "GMS",
+        "partner_id": 2912,
+        "partner": "Delhaize Le Lion S.A",
+        "untaxed": 416.06,
+        "total": 441.0,
+        "origin": "S06110",
+        "is_refund": false
+      },
+      {
+        "id": 44013,
+        "name": "INV/2026/03752",
+        "date": "2026-08-06",
+        "channel": "GMS",
+        "partner_id": 2909,
+        "partner": "DelEmbourg SRL - Delhaize Embourg",
+        "untaxed": 413.72,
+        "total": 438.55,
+        "origin": "S06107",
+        "is_refund": false
+      },
+      {
+        "id": 44032,
+        "name": "INV/2026/03758",
+        "date": "2026-08-06",
+        "channel": "GMS",
+        "partner_id": 113445,
+        "partner": "D-trois SRL - Proxy Delhaize Saint-Séverin",
+        "untaxed": 336.48,
+        "total": 356.67,
+        "origin": "S06116",
+        "is_refund": false
+      },
+      {
+        "id": 44023,
+        "name": "INV/2026/03755",
+        "date": "2026-08-06",
+        "channel": "GMS",
+        "partner_id": 7649,
+        "partner": "Delhaize Le Lion S.A, Affilié 048900 - Ad Spa",
+        "untaxed": 324.59,
+        "total": 344.06,
+        "origin": "S06112",
+        "is_refund": false
+      },
+      {
+        "id": 44037,
+        "name": "INV/2026/03761",
+        "date": "2026-08-06",
+        "channel": "GMS",
+        "partner_id": 6596,
+        "partner": "Carrefour Belgium",
+        "untaxed": 315.98,
+        "total": 334.95,
+        "origin": "S06106",
+        "is_refund": false
+      },
+      {
+        "id": 44031,
+        "name": "INV/2026/03757",
+        "date": "2026-08-06",
+        "channel": "GMS",
+        "partner_id": 119815,
+        "partner": "BARCHONEW SRL - Delhaize Barchon",
+        "untaxed": 203.4,
+        "total": 215.61,
+        "origin": "S06115",
+        "is_refund": false
+      },
+      {
+        "id": 44038,
+        "name": "INV/2026/03762",
+        "date": "2026-08-06",
+        "channel": "GMS",
+        "partner_id": 6596,
+        "partner": "Carrefour Belgium",
+        "untaxed": 150.57,
+        "total": 159.6,
+        "origin": "S06104",
+        "is_refund": false
+      },
+      {
+        "id": 44039,
+        "name": "INV/2026/03763",
+        "date": "2026-08-06",
+        "channel": "Horeca",
+        "partner_id": 2838,
+        "partner": "Brasserie Demain",
+        "untaxed": 111.88,
+        "total": 118.6,
+        "origin": "S06098",
+        "is_refund": false
+      },
+      {
+        "id": 44036,
+        "name": "INV/2026/03760",
+        "date": "2026-08-06",
+        "channel": "Horeca",
+        "partner_id": 113181,
+        "partner": "La couronne",
+        "untaxed": 81.54,
+        "total": 86.45,
+        "origin": "S06114",
+        "is_refund": false
+      },
+      {
+        "id": 44014,
+        "name": "INV3/26-27/0023",
+        "date": "2026-08-06",
+        "channel": "Revendeurs",
+        "partner_id": 3127,
+        "partner": "Marketing Teatower",
+        "untaxed": 0.0,
+        "total": 0.0,
+        "origin": "Waterloo/4265",
+        "is_refund": false
+      },
+      {
+        "id": 44022,
+        "name": "RINV/26-27/0021",
+        "date": "2026-08-06",
+        "channel": "GMS",
+        "partner_id": 6596,
+        "partner": "Carrefour Belgium",
+        "untaxed": -94.43,
+        "total": -100.1,
+        "origin": "",
+        "is_refund": true
+      },
+      {
+        "id": 44020,
+        "name": "RINV/26-27/0020",
+        "date": "2026-08-06",
+        "channel": "GMS",
+        "partner_id": 2912,
+        "partner": "Delhaize Le Lion S.A",
+        "untaxed": -145.29,
+        "total": -154.0,
+        "origin": "",
+        "is_refund": true
+      }
+    ]
+  },
+  "top_clients": [
+    {
+      "partner": "Carrefour Belgium",
+      "ca": 858.19,
+      "n": 4,
+      "channel": "GMS"
+    },
+    {
+      "partner": "Nouvel Air Coiffure",
+      "ca": 548.69,
+      "n": 1,
+      "channel": "Revendeurs"
+    },
+    {
+      "partner": "Joffrey Helson Menuiserie SRL",
+      "ca": 495.27,
+      "n": 1,
+      "channel": "Revendeurs"
+    },
+    {
+      "partner": "DelEmbourg SRL - Delhaize Embourg",
+      "ca": 413.72,
+      "n": 1,
+      "channel": "GMS"
+    },
+    {
+      "partner": "D-trois SRL - Proxy Delhaize Saint-Séverin",
+      "ca": 336.48,
+      "n": 1,
+      "channel": "GMS"
+    },
+    {
+      "partner": "Delhaize Le Lion S.A, Affilié 048900 - Ad Spa",
+      "ca": 324.59,
+      "n": 1,
+      "channel": "GMS"
+    },
+    {
+      "partner": "Delhaize Le Lion S.A",
+      "ca": 270.77,
+      "n": 2,
+      "channel": "GMS"
+    },
+    {
+      "partner": "BARCHONEW SRL - Delhaize Barchon",
+      "ca": 203.4,
+      "n": 1,
+      "channel": "GMS"
+    }
+  ],
+  "top_produits": [
+    {
+      "product_id": 4572,
+      "label": "[GI0735] Pêche de Vigne - BIO glacée",
+      "qty": 81.0,
+      "ca": 508.17
+    },
+    {
+      "product_id": 4574,
+      "label": "[GI0820] Marrakech Sunset - BIO glacé",
+      "qty": 72.0,
+      "ca": 451.71
+    },
+    {
+      "product_id": 4571,
+      "label": "[GI0634] Gourmandise glacée",
+      "qty": 62.0,
+      "ca": 388.96
+    },
+    {
+      "product_id": 4578,
+      "label": "[GI0832] La Nana de Wépion glacée",
+      "qty": 58.0,
+      "ca": 363.87
+    },
+    {
+      "product_id": 7451,
+      "label": "[GI0916] Vergers d’Été: saveurs: Pomme - Poire",
+      "qty": 37.0,
+      "ca": 232.12
+    },
+    {
+      "product_id": 4635,
+      "label": "[I0279] Le panier de grand maman (20 infusettes)",
+      "qty": 31.0,
+      "ca": 225.18
+    },
+    {
+      "product_id": 7061,
+      "label": "[GI0912] Passion Exotique - Infusion de fruits : Mangue - Passion",
+      "qty": 31.0,
+      "ca": 194.48
+    },
+    {
+      "product_id": 4689,
+      "label": "[I0735] Pêche de vigne - BIO (20 infusettes)",
+      "qty": 22.0,
+      "ca": 159.81
+    },
+    {
+      "product_id": 4693,
+      "label": "[I0751] I love you (20 infusettes)",
+      "qty": 16.0,
+      "ca": 116.23
+    },
+    {
+      "product_id": 4752,
+      "label": "[I0868] Citron meringué (20 infusettes)",
+      "qty": 15.0,
+      "ca": 108.97
+    }
+  ],
+  "tendance": {
+    "points": [
+      {
+        "date": "2026-07-02",
+        "label": "02/07/2026",
+        "ca": 1655.29,
+        "by_channel": {
+          "GMS": 1655.29,
+          "Horeca": 0.0,
+          "Revendeurs": 0.0
+        },
+        "n": 4
+      },
+      {
+        "date": "2026-07-09",
+        "label": "09/07/2026",
+        "ca": 1266.98,
+        "by_channel": {
+          "GMS": 1266.98,
+          "Horeca": 0.0,
+          "Revendeurs": 0.0
+        },
+        "n": 6
+      },
+      {
+        "date": "2026-07-16",
+        "label": "16/07/2026",
+        "ca": -62.73,
+        "by_channel": {
+          "GMS": -37.64,
+          "Horeca": 0.0,
+          "Revendeurs": -25.09
+        },
+        "n": 3
+      },
+      {
+        "date": "2026-07-23",
+        "label": "23/07/2026",
+        "ca": 0.0,
+        "by_channel": {
+          "GMS": 0.0,
+          "Horeca": 0.0,
+          "Revendeurs": 0.0
+        },
+        "n": 0
+      },
+      {
+        "date": "2026-07-30",
+        "label": "30/07/2026",
+        "ca": 1406.59,
+        "by_channel": {
+          "GMS": 1406.59,
+          "Horeca": 0.0,
+          "Revendeurs": 0.0
+        },
+        "n": 3
+      },
+      {
+        "date": "2026-08-06",
+        "label": "06/08/2026",
+        "ca": 3644.53,
+        "by_channel": {
+          "GMS": 2407.15,
+          "Horeca": 193.42,
+          "Revendeurs": 1043.96
+        },
+        "n": 15,
+        "is_today": true
+      }
+    ],
+    "moyenne_5": 853.23,
+    "delta_pct": 327.1
+  },
+  "mtd": {
+    "depuis": "2026-08-01",
+    "total_ht": 9167.7,
+    "by_channel": {
+      "GMS": 4565.65,
+      "Horeca": 963.92,
+      "Revendeurs": 3638.13
+    },
+    "nb_factures": 35
+  },
+  "drafts": {
+    "nb": 8,
+    "total_ht": 809.44,
+    "items": [
+      {
+        "name": "(brouillon)",
+        "partner": "Sodexo Belgium NV",
+        "channel": "Horeca",
+        "untaxed": 750.0,
+        "date": "2026-06-09"
+      },
+      {
+        "name": "(brouillon)",
+        "partner": "Restaurant La Gloriette - SPRL Baufau - Mr Olivier Bauche",
+        "channel": "Horeca",
+        "untaxed": 59.44,
+        "date": "2026-05-28"
+      },
+      {
+        "name": "(brouillon)",
+        "partner": "TRL 13 SPRL - Amar AMARA",
+        "channel": "Horeca",
+        "untaxed": 0.0,
+        "date": "2026-08-04"
+      },
+      {
+        "name": "(brouillon)",
+        "partner": "Banque Degroof Petercam sa",
+        "channel": "Horeca",
+        "untaxed": 0.0,
+        "date": "2026-07-31"
+      },
+      {
+        "name": "(brouillon)",
+        "partner": "Cellmade / Prison De Marche",
+        "channel": "Revendeurs",
+        "untaxed": 0.0,
+        "date": "2026-07-08"
+      },
+      {
+        "name": "(brouillon)",
+        "partner": "Maison Depouhon",
+        "channel": "Horeca",
+        "untaxed": 0.0,
+        "date": "2026-07-01"
+      },
+      {
+        "name": "(brouillon)",
+        "partner": "Veepee Northern Europe",
+        "channel": "Revendeurs",
+        "untaxed": 0.0,
+        "date": "2026-05-04"
+      },
+      {
+        "name": "(brouillon)",
+        "partner": "Cafes Delahaut",
+        "channel": "Horeca",
+        "untaxed": 0.0,
+        "date": "2026-04-22"
+      }
+    ]
+  },
+  "pipeline": {
+    "nb": 4,
+    "total_ht": 1441.22,
+    "items": [
+      {
+        "name": "S06092",
+        "partner": "Boulangerie Valentine",
+        "channel": "Revendeurs",
+        "untaxed": 826.41,
+        "date": "2026-08-04",
+        "state": "draft",
+        "age_days": 3,
+        "user": "aurelie.thibaut@noenature.com"
+      },
+      {
+        "name": "S05571",
+        "partner": "Mix F&B SRL",
+        "channel": "Revendeurs",
+        "untaxed": 544.81,
+        "date": "2026-05-13",
+        "state": "draft",
+        "age_days": 86,
+        "user": "Nicolas Raes"
+      },
+      {
+        "name": "S06118",
+        "partner": "SCTA srl - Sabrina Cacciatore",
+        "channel": "Horeca",
+        "untaxed": 70.0,
+        "date": "2026-08-07",
+        "state": "draft",
+        "age_days": 0,
+        "user": "aurelie.thibaut@noenature.com"
+      },
+      {
+        "name": "S06006",
+        "partner": "GIMALEX SA - Delhaize Fragnée",
+        "channel": "GMS",
+        "untaxed": 0.0,
+        "date": "2026-07-14",
+        "state": "draft",
+        "age_days": 24,
+        "user": "Nicolas Raes"
+      }
+    ]
+  }
+}
