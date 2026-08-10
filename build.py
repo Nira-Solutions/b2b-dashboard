@@ -25,87 +25,17 @@ Usage :
   python reports/build_b2b_dashboard.py --data autre.json --deploy-dir chemin/
 """
 import argparse
-import html
 import json
-import re
 import shutil
 from datetime import date, datetime
 from pathlib import Path
 
+from b2b_render import (badge, card, empty, esc, eur, kpi, name_list, note,
+                        pct_change, rank_medal, section, slot, split_code,
+                        table, trunc)
+from b2b_style import CSS
+
 HERE = Path(__file__).resolve().parent
-
-CHANNEL_SLOT = {"GMS": "c1", "Horeca": "c2", "Revendeurs": "c3"}
-RE_CODE = re.compile(r"^\[([^\]]+)\]\s*(.*)$")
-
-
-def eur(v, decimals=2):
-    return f"{v:,.{decimals}f}".replace(",", " ").replace(".", ",")
-
-
-def esc(s):
-    return html.escape(str(s if s is not None else ""))
-
-
-def slot(ch):
-    return CHANNEL_SLOT.get(ch, "c0")
-
-
-def split_code(label):
-    m = RE_CODE.match(label or "")
-    return (m.group(1), m.group(2)) if m else ("", label or "")
-
-
-def trunc(s, n=52):
-    s = s or ""
-    return s if len(s) <= n else s[: n - 1] + "…"
-
-
-def badge(pct, neutral_if_none=True):
-    """Badge d'evolution facon vilnagaon : ↑ vert / ↓ rouge / — gris."""
-    if pct is None:
-        return '<span class="badge neutral">&mdash;</span>' if neutral_if_none else "&mdash;"
-    if pct == float("inf"):
-        return '<span class="badge up">+&infin;</span>'
-    if pct >= 0:
-        return f'<span class="badge up">&uarr; {eur(pct, 1)}%</span>'
-    return f'<span class="badge down">&darr; {eur(abs(pct), 1)}%</span>'
-
-
-def rank_medal(i):
-    cls = f" rank-{i + 1}" if i < 3 else ""
-    return f'<span class="rank{cls}">{i + 1}</span>'
-
-
-def pct_change(now, before):
-    if before is None or before == 0:
-        return float("inf") if now > 0 else None
-    return (now - before) / abs(before) * 100
-
-
-def kpi(value, label, tone=""):
-    return (f'<div class="kpi-box{" " + tone if tone else ""}">'
-            f'<div class="value">{value}</div>'
-            f'<div class="label">{esc(label)}</div></div>')
-
-
-def card(title, body, extra_class=""):
-    return (f'<div class="card{" " + extra_class if extra_class else ""}">'
-            f'<h2>{esc(title)}</h2>{body}</div>')
-
-
-def section(title):
-    return f'<div class="section-title">{esc(title)}</div>'
-
-
-def empty(msg):
-    return f'<p class="empty">{esc(msg)}</p>'
-
-
-def name_list(items, limit=4):
-    names = [x["partner"] for x in items[:limit]]
-    return ", ".join(names) + (f" et {len(items) - limit} autre(s)"
-                               if len(items) > limit else "")
-
 
 # --------------------------------------------------------------------------
 
@@ -134,21 +64,6 @@ def trend_bars(tendance, channels):
     legend = "".join(f'<span class="lg"><i class="{slot(c)}"></i>{esc(c)}</span>'
                      for c in channels)
     return f'<div class="legend">{legend}</div>' + "".join(rows)
-
-
-def table(head_cells, rows, cols):
-    head = "".join(f'<th class="{c.get("cls","")}">{h}</th>'
-                   for h, c in zip(head_cells, cols))
-    body = "".join(
-        "<tr>" + "".join(f'<td class="{c.get("cls","")}">{c["get"](r, i)}</td>'
-                         for c in cols) + "</tr>"
-        for i, r in enumerate(rows)
-    )
-    return f"<table><tr>{head}</tr>{body}</table>"
-
-
-def note(txt):
-    return f'<p class="note">{esc(txt)}</p>' if txt else ""
 
 
 # --------------------------------------------------------------------------
@@ -304,185 +219,7 @@ def render(d):
 <meta name="robots" content="noindex, nofollow">
 <title>B2B Morning Dashboard — Teatower — {d["target_date"]}</title>
 <style>
-  :root {{
-    --bg: #f8f7f4;
-    --card: #ffffff;
-    --border: #e8e5df;
-    --text: #2c2c2c;
-    --muted: #7a7a7a;
-    --accent: #5b7f5e;
-    --accent-light: #e8f0e8;
-    --up: #2e7d32;
-    --up-bg: #e8f5e9;
-    --down: #c62828;
-    --down-bg: #ffebee;
-    --neutral: #666;
-    --neutral-bg: #f5f5f5;
-    --gold: #c6930a;
-    --silver: #757575;
-    --bronze: #a0522d;
-    /* Canaux : triade validee sur fond creme (chroma, CVD, vision normale,
-       contraste >= 3:1). La sauge --accent lit gris en aplat, elle reste
-       reservee aux titres et aux kpi-box. */
-    --c1: #2f6ba8;
-    --c2: #c0562a;
-    --c3: #1a8f66;
-  }}
-  * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-  body {{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    padding: 24px;
-    max-width: 1200px;
-    margin: 0 auto;
-    font-size: 14px;
-    line-height: 1.5;
-  }}
-  header {{
-    display: flex; justify-content: space-between; align-items: center;
-    margin-bottom: 28px; padding-bottom: 16px;
-    border-bottom: 2px solid var(--accent);
-  }}
-  header h1 {{ font-size: 22px; font-weight: 700; color: var(--accent); }}
-  header .meta {{ text-align: right; color: var(--muted); font-size: 13px; }}
-
-  .grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px; }}
-  .grid.three {{ grid-template-columns: 1fr 1fr 1fr; }}
-  .grid.full {{ grid-template-columns: 1fr; }}
-
-  .card {{
-    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
-    padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-  }}
-  .card h2 {{
-    font-size: 14px; font-weight: 600; color: var(--muted);
-    text-transform: uppercase; letter-spacing: 0.5px;
-    margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid var(--border);
-  }}
-  .section-title {{
-    font-size: 16px; font-weight: 700; color: var(--text);
-    margin: 28px 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border);
-  }}
-
-  .kpi-row {{ display: flex; justify-content: space-between; gap: 12px; margin-bottom: 16px; }}
-  .kpi-box {{ flex: 1; text-align: center; padding: 12px 8px;
-              background: var(--accent-light); border-radius: 8px; }}
-  .kpi-box .value {{ font-size: 22px; font-weight: 700; color: var(--accent);
-                     white-space: nowrap; }}
-  .kpi-box .value .badge {{ font-size: 15px; }}
-  .kpi-box .label {{ font-size: 11px; color: var(--muted); text-transform: uppercase;
-                     letter-spacing: 0.3px; margin-top: 2px; }}
-
-  table {{ width: 100%; border-collapse: collapse; font-size: 13px; }}
-  th {{ text-align: left; padding: 8px 10px; font-weight: 600; font-size: 11px;
-        text-transform: uppercase; letter-spacing: 0.3px; color: var(--muted);
-        border-bottom: 2px solid var(--border); white-space: nowrap; }}
-  th.right, td.right {{ text-align: right; white-space: nowrap; }}
-  td {{ padding: 7px 10px; border-bottom: 1px solid var(--border); vertical-align: middle; }}
-  tr:last-child td {{ border-bottom: none; }}
-  tr:hover td {{ background: #fafaf8; }}
-  td.mono, .mono {{ font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 12px;
-                    white-space: nowrap; }}
-  td.muted, .muted {{ color: var(--muted); }}
-  td.medal, th.medal {{ width: 34px; }}
-  .neg {{ color: var(--down); }}
-
-  .badge {{ display: inline-block; padding: 2px 8px; border-radius: 10px;
-            font-size: 12px; font-weight: 600; white-space: nowrap; }}
-  .badge.up {{ background: var(--up-bg); color: var(--up); }}
-  .badge.down {{ background: var(--down-bg); color: var(--down); }}
-  .badge.neutral {{ background: var(--neutral-bg); color: var(--neutral); }}
-
-  .rank {{ display: inline-block; width: 22px; height: 22px; line-height: 22px;
-           text-align: center; border-radius: 50%; font-weight: 700; font-size: 12px;
-           color: var(--muted); background: var(--neutral-bg); }}
-  .rank-1 {{ background: #fff8e1; color: var(--gold); }}
-  .rank-2 {{ background: #f5f5f5; color: var(--silver); }}
-  .rank-3 {{ background: #fbe9e7; color: var(--bronze); }}
-
-  .sku {{ font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 11px;
-          color: var(--accent); font-weight: 600; }}
-  .tag {{ display: inline-block; padding: 1px 8px; border-radius: 10px;
-          font-size: 11px; font-weight: 600; color: #fff; white-space: nowrap; }}
-  .tag.c1 {{ background: var(--c1); }}
-  .tag.c2 {{ background: var(--c2); }}
-  .tag.c3 {{ background: var(--c3); }}
-  .dot {{ display: inline-block; width: 10px; height: 10px; border-radius: 50%;
-          margin-right: 7px; vertical-align: 0; }}
-  .dot.c1 {{ background: var(--c1); }}
-  .dot.c2 {{ background: var(--c2); }}
-  .dot.c3 {{ background: var(--c3); }}
-
-  /* ---- cartes canal ---- */
-  .chan-card {{
-    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
-    padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-  }}
-  .chan-card.rank-first {{ border-left: 4px solid var(--gold); }}
-  .chan-card.rank-second {{ border-left: 4px solid var(--silver); }}
-  .chan-card.rank-third {{ border-left: 4px solid var(--bronze); }}
-  .chan-header {{ display: flex; justify-content: space-between; align-items: center;
-                  margin-bottom: 14px; padding-bottom: 10px;
-                  border-bottom: 1px solid var(--border); }}
-  .chan-header h2 {{ font-size: 16px; font-weight: 700; color: var(--text);
-                     margin: 0; padding: 0; border: none; text-transform: none;
-                     letter-spacing: 0; display: flex; align-items: center; }}
-  .chan-rank {{ font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 12px; }}
-  .chan-rank.r1 {{ background: #fff8e1; color: var(--gold); }}
-  .chan-rank.r2 {{ background: #f5f5f5; color: var(--silver); }}
-  .chan-rank.r3 {{ background: #fbe9e7; color: var(--bronze); }}
-  .chan-foot {{ font-size: 12px; color: var(--muted); display: flex;
-                align-items: center; gap: 8px; }}
-
-  /* ---- barres horizontales ---- */
-  .legend {{ display: flex; gap: 16px; margin-bottom: 12px; flex-wrap: wrap; }}
-  .lg {{ display: inline-flex; align-items: center; gap: 6px; font-size: 12px;
-         color: var(--muted); font-weight: 600; }}
-  .lg i {{ width: 10px; height: 10px; border-radius: 50%; }}
-  .lg i.c1 {{ background: var(--c1); }}
-  .lg i.c2 {{ background: var(--c2); }}
-  .lg i.c3 {{ background: var(--c3); }}
-  .hour-bar {{ display: flex; align-items: center; gap: 10px; margin-bottom: 7px;
-               font-size: 12px; }}
-  .hour-bar .hour-label {{ width: 110px; color: var(--muted); flex: none;
-                           white-space: nowrap; }}
-  .hour-bar .hour-label em {{ font-style: normal; color: var(--accent);
-                              font-weight: 700; font-size: 10px;
-                              text-transform: uppercase; margin-left: 6px; }}
-  .hour-bar .bar-track {{ flex: 1; background: #f2f1ec; border-radius: 3px;
-                          height: 16px; overflow: hidden; }}
-  .hour-bar .bar {{ display: flex; height: 100%; border-radius: 3px;
-                    overflow: hidden; min-width: 2px; }}
-  .hour-bar .bar span {{ display: block; height: 100%; }}
-  .hour-bar .bar .c1 {{ background: var(--c1); }}
-  .hour-bar .bar .c2 {{ background: var(--c2); }}
-  .hour-bar .bar .c3 {{ background: var(--c3); }}
-  .hour-bar .bar-value {{ min-width: 86px; text-align: right; font-weight: 700;
-                          color: var(--text); white-space: nowrap; }}
-  .hour-bar .bar-count {{ min-width: 54px; text-align: right; color: var(--muted);
-                          white-space: nowrap; }}
-  .hour-bar.today .hour-label,
-  .hour-bar.today .bar-value {{ color: var(--text); font-weight: 700; }}
-
-  .empty {{ color: var(--muted); font-style: italic; padding: 12px 0; }}
-  .note {{ color: var(--muted); font-size: 12px; margin-top: 12px;
-           padding-top: 10px; border-top: 1px solid var(--border); }}
-  footer {{ margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border);
-            color: var(--muted); font-size: 12px; text-align: center; }}
-
-  @media (max-width: 768px) {{
-    body {{ padding: 16px; }}
-    header {{ flex-direction: column; align-items: flex-start; gap: 8px; }}
-    header .meta {{ text-align: left; }}
-    .grid, .grid.three {{ grid-template-columns: 1fr; }}
-    .kpi-row {{ flex-wrap: wrap; }}
-    .kpi-box {{ min-width: 45%; }}
-    .hour-bar .hour-label {{ width: 76px; }}
-    .hour-bar .bar-count {{ display: none; }}
-    table {{ font-size: 12px; }}
-    td, th {{ padding: 6px 6px; }}
-  }}
+{CSS}
 </style>
 </head>
 <body>
@@ -491,7 +228,8 @@ def render(d):
   <h1>B2B Morning Dashboard &mdash; Teatower</h1>
   <div class="meta">
     <div><strong>{gen.strftime("%Y-%m-%d")}</strong> &middot; Donn&eacute;es du {d["target_date"]}</div>
-    <div>G&eacute;n&eacute;r&eacute; le {gen.strftime("%Y-%m-%d %H:%M")}</div>
+    <div>G&eacute;n&eacute;r&eacute; le {gen.strftime("%Y-%m-%d %H:%M")} &middot;
+      <a href="weekly/">revue hebdomadaire</a></div>
   </div>
 </header>
 
@@ -563,9 +301,13 @@ def main():
         dd = Path(args.deploy_dir)
         dd.mkdir(parents=True, exist_ok=True)
         (dd / "index.html").write_text(page, encoding="utf-8")
-        shutil.copyfile(data_path, dd / "data.json")
         print(f"OK  {dd / 'index.html'}")
-        print(f"OK  {dd / 'data.json'}")
+        target = dd / "data.json"
+        # En CI l'extraction ecrit deja dans le dossier de deploiement : copier
+        # le fichier sur lui-meme leverait SameFileError.
+        if data_path.resolve() != target.resolve():
+            shutil.copyfile(data_path, target)
+            print(f"OK  {target}")
 
 
 if __name__ == "__main__":
