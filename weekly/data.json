@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T11:18:32",
+  "generated_at": "2026-08-24T11:21:10",
   "week": {
     "iso": "2026-S34",
     "num": 34,
@@ -13,22 +13,22 @@
     "Revendeurs"
   ],
   "semaine": {
-    "total_ht": -62060.41,
-    "nb_factures": 48,
-    "nb_clients": 36,
-    "panier_moyen": -1292.93,
+    "total_ht": 14772.05,
+    "nb_factures": 43,
+    "nb_clients": 35,
+    "panier_moyen": 343.54,
     "by_channel": {
       "GMS": {
-        "ca": 3965.14,
-        "n": 19
+        "ca": 7533.62,
+        "n": 15
       },
       "Horeca": {
         "ca": 4799.94,
         "n": 14
       },
       "Revendeurs": {
-        "ca": -70825.49,
-        "n": 15
+        "ca": 2438.49,
+        "n": 14
       }
     },
     "factures": [
@@ -547,66 +547,6 @@
         "total": -15.4,
         "origin": "S05815",
         "is_refund": true
-      },
-      {
-        "id": 44643,
-        "name": "RINV/26-27/0027",
-        "date": "2026-08-18",
-        "channel": "GMS",
-        "partner_id": 2912,
-        "partner": "Delhaize Le Lion S.A",
-        "untaxed": -609.37,
-        "total": -645.93,
-        "origin": "",
-        "is_refund": true
-      },
-      {
-        "id": 44642,
-        "name": "RINV/26-27/0026",
-        "date": "2026-08-18",
-        "channel": "GMS",
-        "partner_id": 2912,
-        "partner": "Delhaize Le Lion S.A",
-        "untaxed": -710.21,
-        "total": -752.82,
-        "origin": "",
-        "is_refund": true
-      },
-      {
-        "id": 44645,
-        "name": "RINV/26-27/0029",
-        "date": "2026-08-18",
-        "channel": "GMS",
-        "partner_id": 2912,
-        "partner": "Delhaize Le Lion S.A",
-        "untaxed": -956.75,
-        "total": -1014.16,
-        "origin": "",
-        "is_refund": true
-      },
-      {
-        "id": 44644,
-        "name": "RINV/26-27/0028",
-        "date": "2026-08-18",
-        "channel": "GMS",
-        "partner_id": 2912,
-        "partner": "Delhaize Le Lion S.A",
-        "untaxed": -1292.15,
-        "total": -1369.68,
-        "origin": "",
-        "is_refund": true
-      },
-      {
-        "id": 44781,
-        "name": "RINV/26-27/0038",
-        "date": "2026-08-20",
-        "channel": "Revendeurs",
-        "partner_id": 6973,
-        "partner": "Tea Touch",
-        "untaxed": -73263.98,
-        "total": -77659.82,
-        "origin": "",
-        "is_refund": true
       }
     ]
   },
@@ -623,9 +563,9 @@
         "Revendeurs": 1659.43
       }
     },
-    "delta_s1_pct": -432.3,
+    "delta_s1_pct": -20.9,
     "moyenne_4s": 11446.9,
-    "delta_moy4_pct": -642.2,
+    "delta_moy4_pct": 29.0,
     "n_1": {
       "monday": "2025-08-18",
       "range": "18/08-24/08",
@@ -637,7 +577,7 @@
         "Revendeurs": 1110.15
       }
     },
-    "delta_n1_pct": -902.6
+    "delta_n1_pct": 91.0
   },
   "historique": [
     {
@@ -692,17 +632,26 @@
       "monday": "2026-08-17",
       "label": "S34",
       "range": "17/08-23/08",
-      "ca": -62060.41,
-      "n": 48,
+      "ca": 14772.05,
+      "n": 43,
       "by_channel": {
-        "GMS": 3965.14,
+        "GMS": 7533.62,
         "Horeca": 4799.94,
-        "Revendeurs": -70825.49
+        "Revendeurs": 2438.49
       },
       "is_current": true
     }
   ],
   "top_clients": [
+    {
+      "partner": "Delhaize Le Lion S.A",
+      "ca": 2486.13,
+      "n": 4,
+      "channel": "GMS",
+      "partner_id": 2912,
+      "ca_hebdo_moyen_12m": 1352.47,
+      "delta_pct": 83.8
+    },
     {
       "partner": "Café Ventuno",
       "ca": 1162.5,
@@ -828,15 +777,6 @@
       "partner_id": 124572,
       "ca_hebdo_moyen_12m": 13.46,
       "delta_pct": 2229.9
-    },
-    {
-      "partner": "VLV",
-      "ca": 311.29,
-      "n": 1,
-      "channel": "Revendeurs",
-      "partner_id": 3275,
-      "ca_hebdo_moyen_12m": 12.17,
-      "delta_pct": 2457.3
     }
   ],
   "top_produits": [
@@ -1116,15 +1056,6 @@
       "partner_id": 3180,
       "last_seen": "2026-06-18",
       "gap_days": 60
-    },
-    {
-      "partner": "Tea Touch",
-      "ca": -73263.98,
-      "n": 1,
-      "channel": "Revendeurs",
-      "partner_id": 6973,
-      "last_seen": null,
-      "gap_days": null
     }
   ],
   "dormants": [
@@ -1503,31 +1434,31 @@
   },
   "mtd": {
     "depuis": "2026-08-01",
-    "total_ht": -34214.24,
+    "total_ht": 42618.22,
     "by_channel": {
-      "GMS": 21847.56,
+      "GMS": 25416.04,
       "Horeca": 9466.13,
-      "Revendeurs": -65527.93
+      "Revendeurs": 7736.05
     },
-    "nb_factures": 147
+    "nb_factures": 142
   },
   "ytd": {
-    "total_ht": 484309.1,
+    "total_ht": 563730.36,
     "by_channel": {
-      "GMS": 259809.33,
+      "GMS": 265966.61,
       "Horeca": 167537.88,
-      "Revendeurs": 56961.89
+      "Revendeurs": 130225.87
     },
-    "nb_factures": 1712,
-    "n_1": 345089.46,
-    "delta_pct": 40.3,
+    "nb_factures": 1703,
+    "n_1": 348073.01,
+    "delta_pct": 62.0,
     "note": "Aucune facture B2B en base avant 2025-04-01 : le YTD N-1 est tronque, le delta brut n'est pas exploitable. Utiliser la comparaison recalee depuis 04/2025.",
     "comparable": {
       "depuis": "2026-04-01",
       "depuis_n_1": "2025-04-01",
-      "ca": 265014.76,
-      "ca_n_1": 345089.46,
-      "delta_pct": -23.2
+      "ca": 342585.89,
+      "ca_n_1": 348073.01,
+      "delta_pct": -1.6
     }
   },
   "drafts": {
@@ -1704,5 +1635,42 @@
         "user": "Nicolas Raes"
       }
     ]
-  }
+  },
+  "exclusions": [
+    {
+      "name": "RINV/26-27/0038",
+      "date": "2026-08-20",
+      "partner": "Tea Touch",
+      "untaxed": -73263.98,
+      "ref": "Write-off créance irrécouvrable — INV/2025/01539, faillite Tea Touch (jugement/curateur)"
+    },
+    {
+      "name": "RINV/26-27/0028",
+      "date": "2026-08-18",
+      "partner": "Delhaize Le Lion S.A",
+      "untaxed": -1292.15,
+      "ref": "Rebates 06/2026 - fournisseur 10072605"
+    },
+    {
+      "name": "RINV/26-27/0029",
+      "date": "2026-08-18",
+      "partner": "Delhaize Le Lion S.A",
+      "untaxed": -956.75,
+      "ref": "Rebates 07/2026 - fournisseur 10072605"
+    },
+    {
+      "name": "RINV/26-27/0026",
+      "date": "2026-08-18",
+      "partner": "Delhaize Le Lion S.A",
+      "untaxed": -710.21,
+      "ref": "Rebates 04/2026 - fournisseur 10072605"
+    },
+    {
+      "name": "RINV/26-27/0027",
+      "date": "2026-08-18",
+      "partner": "Delhaize Le Lion S.A",
+      "untaxed": -609.37,
+      "ref": "Rebates 05/2026 - fournisseur 10072605"
+    }
+  ]
 }
