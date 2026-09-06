@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-31T07:24:07",
+  "generated_at": "2026-09-06T22:44:32",
   "week": {
-    "iso": "2026-S35",
-    "num": 35,
-    "monday": "2026-08-24",
-    "sunday": "2026-08-30",
-    "label": "S35 — du 24 au 30 aout 2026"
+    "iso": "2026-S36",
+    "num": 36,
+    "monday": "2026-08-31",
+    "sunday": "2026-09-06",
+    "label": "S36 — du 31 au 6 septembre 2026"
   },
   "channels": [
     "GMS",
@@ -13,477 +13,501 @@
     "Revendeurs"
   ],
   "semaine": {
-    "total_ht": 11380.6,
-    "nb_factures": 34,
+    "total_ht": 11193.61,
+    "nb_factures": 37,
     "nb_clients": 25,
-    "panier_moyen": 334.72,
+    "panier_moyen": 302.53,
     "by_channel": {
       "GMS": {
-        "ca": 3149.14,
-        "n": 11
+        "ca": 6454.44,
+        "n": 20
       },
       "Horeca": {
-        "ca": 6657.65,
-        "n": 13
+        "ca": 3175.96,
+        "n": 10
       },
       "Revendeurs": {
-        "ca": 1573.81,
-        "n": 10
+        "ca": 1563.21,
+        "n": 7
       }
     },
     "factures": [
       {
-        "id": 45115,
-        "name": "INV/2026/03999",
-        "date": "2026-08-26",
-        "channel": "Horeca",
-        "partner_id": 3260,
-        "partner": "The Torrefactory Project Sa",
-        "untaxed": 3157.28,
-        "total": 3346.72,
-        "origin": "S06245",
-        "is_refund": false
-      },
-      {
-        "id": 45020,
-        "name": "INV/2026/03975",
-        "date": "2026-08-25",
+        "id": 45387,
+        "name": "INV/2026/04056",
+        "date": "2026-08-31",
         "channel": "Revendeurs",
-        "partner_id": 7471,
-        "partner": "SRL Guchet Thunus - Au gré du vent",
-        "untaxed": 903.43,
-        "total": 957.7,
-        "origin": "S06236",
+        "partner_id": 3062,
+        "partner": "Le Comptoir Local Linkebeek",
+        "untaxed": 1434.37,
+        "total": 1520.51,
+        "origin": "S06257",
         "is_refund": false
       },
       {
-        "id": 45027,
-        "name": "INV/2026/03982",
-        "date": "2026-08-25",
-        "channel": "Horeca",
-        "partner_id": 2857,
-        "partner": "Cafes Delahaut",
-        "untaxed": 750.0,
-        "total": 795.0,
-        "origin": "S06215",
-        "is_refund": false
-      },
-      {
-        "id": 45022,
-        "name": "INV/2026/03977",
-        "date": "2026-08-25",
-        "channel": "Horeca",
-        "partner_id": 122658,
-        "partner": "Smart fridges srl - Frigo Loco",
-        "untaxed": 600.0,
-        "total": 636.0,
-        "origin": "S06235",
-        "is_refund": false
-      },
-      {
-        "id": 45112,
-        "name": "INV/2026/03996",
-        "date": "2026-08-26",
+        "id": 45574,
+        "name": "INV/2026/04099",
+        "date": "2026-09-03",
         "channel": "GMS",
-        "partner_id": 124148,
-        "partner": "Spar Beauvechain",
-        "untaxed": 538.86,
-        "total": 571.22,
-        "origin": "S06249",
+        "partner_id": 2865,
+        "partner": "Carrefour Market Remouchamps",
+        "untaxed": 814.6,
+        "total": 863.49,
+        "origin": "S06299",
         "is_refund": false
       },
       {
-        "id": 45024,
-        "name": "INV/2026/03979",
-        "date": "2026-08-25",
-        "channel": "Horeca",
-        "partner_id": 126328,
-        "partner": "JM Wines & Events",
-        "untaxed": 508.16,
-        "total": 539.29,
-        "origin": "S06226",
+        "id": 45576,
+        "name": "INV/2026/04100",
+        "date": "2026-09-03",
+        "channel": "GMS",
+        "partner_id": 116869,
+        "partner": "Chili Peppers - Intermarché Tilf",
+        "untaxed": 761.43,
+        "total": 807.13,
+        "origin": "S06300",
         "is_refund": false
       },
       {
-        "id": 45116,
-        "name": "INV/2026/04000",
-        "date": "2026-08-26",
-        "channel": "Horeca",
-        "partner_id": 3076,
-        "partner": "Le Pré Vert S.A.",
-        "untaxed": 502.6,
-        "total": 532.77,
-        "origin": "S06244",
-        "is_refund": false
-      },
-      {
-        "id": 44971,
-        "name": "INV/2026/03968",
-        "date": "2026-08-24",
+        "id": 45415,
+        "name": "INV/2026/04064",
+        "date": "2026-09-01",
         "channel": "GMS",
         "partner_id": 6596,
         "partner": "Carrefour Belgium",
-        "untaxed": 492.32,
-        "total": 521.87,
-        "origin": "S06233",
+        "untaxed": 624.09,
+        "total": 661.55,
+        "origin": "S06282",
         "is_refund": false
       },
       {
-        "id": 45091,
-        "name": "INV/2026/03993",
-        "date": "2026-08-26",
+        "id": 45362,
+        "name": "INV/2026/04044",
+        "date": "2026-08-31",
         "channel": "GMS",
         "partner_id": 2912,
         "partner": "Delhaize Le Lion S.A",
-        "untaxed": 435.2,
-        "total": 461.3,
-        "origin": "S06253",
+        "untaxed": 616.15,
+        "total": 653.1,
+        "origin": "S06280",
         "is_refund": false
       },
       {
-        "id": 45026,
-        "name": "INV/2026/03981",
-        "date": "2026-08-25",
-        "channel": "Revendeurs",
-        "partner_id": 2889,
-        "partner": "Cocon Life store",
-        "untaxed": 394.73,
-        "total": 418.42,
-        "origin": "S06218",
-        "is_refund": false
-      },
-      {
-        "id": 44969,
-        "name": "INV/2026/03966",
-        "date": "2026-08-24",
-        "channel": "GMS",
-        "partner_id": 3297,
-        "partner": "Windmill SA - Intermarché Bouge",
-        "untaxed": 381.71,
-        "total": 404.61,
-        "origin": "S06230",
-        "is_refund": false
-      },
-      {
-        "id": 45090,
-        "name": "INV/2026/03992",
-        "date": "2026-08-26",
-        "channel": "GMS",
-        "partner_id": 2866,
-        "partner": "Carrefour Market Uccle Bascule",
-        "untaxed": 338.81,
-        "total": 359.12,
-        "origin": "S06252",
-        "is_refund": false
-      },
-      {
-        "id": 45120,
-        "name": "INV/2026/04004",
-        "date": "2026-08-26",
-        "channel": "Horeca",
-        "partner_id": 3292,
-        "partner": "Baaz & Co SRL ( Indian Royal)",
-        "untaxed": 244.71,
-        "total": 259.4,
-        "origin": "S06222",
-        "is_refund": false
-      },
-      {
-        "id": 45025,
-        "name": "INV/2026/03980",
-        "date": "2026-08-25",
-        "channel": "Horeca",
-        "partner_id": 3038,
-        "partner": "La Folle Epoque - Muriel Maron",
-        "untaxed": 240.0,
-        "total": 254.4,
-        "origin": "S06221",
-        "is_refund": false
-      },
-      {
-        "id": 45117,
-        "name": "INV/2026/04001",
-        "date": "2026-08-26",
+        "id": 45554,
+        "name": "INV/2026/04091",
+        "date": "2026-09-03",
         "channel": "Horeca",
         "partner_id": 2856,
         "partner": "Cafés Antillia",
-        "untaxed": 235.0,
-        "total": 249.1,
-        "origin": "S06242",
+        "untaxed": 562.5,
+        "total": 596.25,
+        "origin": "S06291",
         "is_refund": false
       },
       {
-        "id": 45114,
-        "name": "INV/2026/03998",
-        "date": "2026-08-26",
-        "channel": "Horeca",
-        "partner_id": 2873,
-        "partner": "Center Parcs Ardennen NV",
-        "untaxed": 235.0,
-        "total": 249.1,
-        "origin": "S06246",
+        "id": 45579,
+        "name": "INV/2026/04103",
+        "date": "2026-09-03",
+        "channel": "GMS",
+        "partner_id": 2952,
+        "partner": "AD Delhaize Fernelmont (Fernel-Dis SRL n°43132)",
+        "untaxed": 553.75,
+        "total": 586.98,
+        "origin": "S06302",
         "is_refund": false
       },
       {
-        "id": 45113,
-        "name": "INV/2026/03997",
-        "date": "2026-08-26",
+        "id": 45559,
+        "name": "INV/2026/04096",
+        "date": "2026-09-03",
+        "channel": "GMS",
+        "partner_id": 126586,
+        "partner": "Proxy Idalie",
+        "untaxed": 534.94,
+        "total": 567.0,
+        "origin": "S06272",
+        "is_refund": false
+      },
+      {
+        "id": 45360,
+        "name": "INV/2026/04042",
+        "date": "2026-08-31",
         "channel": "GMS",
         "partner_id": 2912,
         "partner": "Delhaize Le Lion S.A",
-        "untaxed": 198.2,
-        "total": 210.1,
-        "origin": "S06248",
+        "untaxed": 477.77,
+        "total": 506.45,
+        "origin": "S06279",
         "is_refund": false
       },
       {
-        "id": 45023,
-        "name": "INV/2026/03978",
-        "date": "2026-08-25",
-        "channel": "Revendeurs",
-        "partner_id": 3043,
-        "partner": "La Vieille Demeure",
-        "untaxed": 191.61,
-        "total": 203.12,
-        "origin": "S06227",
+        "id": 45557,
+        "name": "INV/2026/04094",
+        "date": "2026-09-03",
+        "channel": "Horeca",
+        "partner_id": 3245,
+        "partner": "Sorescol S.A.",
+        "untaxed": 397.5,
+        "total": 421.35,
+        "origin": "S06284",
         "is_refund": false
       },
       {
-        "id": 44970,
-        "name": "INV/2026/03967",
-        "date": "2026-08-24",
+        "id": 45555,
+        "name": "INV/2026/04092",
+        "date": "2026-09-03",
+        "channel": "Horeca",
+        "partner_id": 10102,
+        "partner": "Silversquare Belgium",
+        "untaxed": 385.99,
+        "total": 409.17,
+        "origin": "S06287",
+        "is_refund": false
+      },
+      {
+        "id": 45380,
+        "name": "INV/2026/04049",
+        "date": "2026-08-31",
+        "channel": "Horeca",
+        "partner_id": 3220,
+        "partner": "SPRL Immo-construction - Sandra DURY",
+        "untaxed": 383.97,
+        "total": 407.0,
+        "origin": "S06267",
+        "is_refund": false
+      },
+      {
+        "id": 45378,
+        "name": "INV/2026/04047",
+        "date": "2026-08-31",
+        "channel": "Horeca",
+        "partner_id": 2857,
+        "partner": "Cafes Delahaut",
+        "untaxed": 375.0,
+        "total": 397.5,
+        "origin": "S06271",
+        "is_refund": false
+      },
+      {
+        "id": 45359,
+        "name": "INV/2026/04041",
+        "date": "2026-08-31",
         "channel": "GMS",
         "partner_id": 2912,
         "partner": "Delhaize Le Lion S.A",
-        "untaxed": 179.95,
-        "total": 190.75,
-        "origin": "S06231",
+        "untaxed": 348.04,
+        "total": 368.91,
+        "origin": "S06278",
         "is_refund": false
       },
       {
-        "id": 45089,
-        "name": "INV/2026/03991",
-        "date": "2026-08-26",
+        "id": 45416,
+        "name": "INV/2026/04065",
+        "date": "2026-09-01",
         "channel": "GMS",
-        "partner_id": 2994,
-        "partner": "Intermarché Forest - FREYARVOR",
-        "untaxed": 157.85,
-        "total": 167.32,
-        "origin": "S06251",
+        "partner_id": 2912,
+        "partner": "Delhaize Le Lion S.A",
+        "untaxed": 331.2,
+        "total": 351.07,
+        "origin": "S06283",
         "is_refund": false
       },
       {
-        "id": 45118,
-        "name": "INV/2026/04002",
-        "date": "2026-08-26",
-        "channel": "GMS",
-        "partner_id": 124363,
-        "partner": "Centrale Intermarché",
-        "untaxed": 151.52,
-        "total": 160.6,
-        "origin": "S06234",
-        "is_refund": false
-      },
-      {
-        "id": 45092,
-        "name": "INV/2026/03994",
-        "date": "2026-08-26",
-        "channel": "GMS",
-        "partner_id": 3016,
-        "partner": "KAIO Retail invest - Delhaize Ottignies",
-        "untaxed": 146.6,
-        "total": 155.41,
-        "origin": "S06254",
-        "is_refund": false
-      },
-      {
-        "id": 44968,
-        "name": "INV/2026/03965",
-        "date": "2026-08-24",
-        "channel": "GMS",
-        "partner_id": 2821,
-        "partner": "Belgradis - Intermarché Belgrade",
-        "untaxed": 128.12,
-        "total": 135.81,
-        "origin": "S06229",
-        "is_refund": false
-      },
-      {
-        "id": 45119,
-        "name": "INV/2026/04003",
-        "date": "2026-08-26",
+        "id": 45381,
+        "name": "INV/2026/04050",
+        "date": "2026-08-31",
         "channel": "Horeca",
-        "partner_id": 126263,
-        "partner": "Brasserie RN",
-        "untaxed": 100.0,
-        "total": 106.0,
-        "origin": "S06228",
+        "partner_id": 126500,
+        "partner": "Mouch Et Martine",
+        "untaxed": 330.83,
+        "total": 354.4,
+        "origin": "S06256",
         "is_refund": false
       },
       {
-        "id": 44953,
-        "name": "INV2/26-27/0065",
-        "date": "2026-08-24",
-        "channel": "Horeca",
-        "partner_id": 3075,
-        "partner": "Le Perron de l'Ilon - L'Escale - Abdallah AL CHARIF",
-        "untaxed": 84.9,
-        "total": 90.0,
-        "origin": "Namur/15129",
+        "id": 45570,
+        "name": "INV/2026/04098",
+        "date": "2026-09-03",
+        "channel": "GMS",
+        "partner_id": 2912,
+        "partner": "Delhaize Le Lion S.A",
+        "untaxed": 311.72,
+        "total": 330.41,
+        "origin": "S06298",
         "is_refund": false
       },
       {
-        "id": 45021,
-        "name": "INV/2026/03976",
-        "date": "2026-08-25",
+        "id": 45430,
+        "name": "INV/2026/04072",
+        "date": "2026-09-01",
+        "channel": "GMS",
+        "partner_id": 7692,
+        "partner": "SA Marer - AD Rochefort",
+        "untaxed": 290.59,
+        "total": 308.0,
+        "origin": "S06288",
+        "is_refund": false
+      },
+      {
+        "id": 45385,
+        "name": "INV/2026/04054",
+        "date": "2026-08-31",
         "channel": "Revendeurs",
-        "partner_id": 2996,
-        "partner": "ORSA FUND SA",
-        "untaxed": 84.04,
-        "total": 89.1,
-        "origin": "S06237",
+        "partner_id": 2809,
+        "partner": "B&M Communication et Management SRL",
+        "untaxed": 281.38,
+        "total": 298.28,
+        "origin": "S06261",
         "is_refund": false
       },
       {
-        "id": 45225,
-        "name": "INV/2026/04019",
-        "date": "2026-08-28",
+        "id": 45556,
+        "name": "INV/2026/04093",
+        "date": "2026-09-03",
         "channel": "Horeca",
-        "partner_id": 3038,
-        "partner": "La Folle Epoque - Muriel Maron",
-        "untaxed": 10.0,
-        "total": 10.6,
+        "partner_id": 3076,
+        "partner": "Le Pré Vert S.A.",
+        "untaxed": 260.17,
+        "total": 275.81,
+        "origin": "S06286",
+        "is_refund": false
+      },
+      {
+        "id": 45358,
+        "name": "INV/2026/04040",
+        "date": "2026-08-31",
+        "channel": "GMS",
+        "partner_id": 2912,
+        "partner": "Delhaize Le Lion S.A",
+        "untaxed": 243.02,
+        "total": 257.6,
+        "origin": "S06277",
+        "is_refund": false
+      },
+      {
+        "id": 45431,
+        "name": "INV/2026/04073",
+        "date": "2026-09-01",
+        "channel": "GMS",
+        "partner_id": 116008,
+        "partner": "SA Beausov New - Delhaize Beauraing",
+        "untaxed": 224.54,
+        "total": 238.0,
+        "origin": "S06289",
+        "is_refund": false
+      },
+      {
+        "id": 45379,
+        "name": "INV/2026/04048",
+        "date": "2026-08-31",
+        "channel": "Horeca",
+        "partner_id": 7784,
+        "partner": "HM25 SRL",
+        "untaxed": 180.0,
+        "total": 190.8,
+        "origin": "S06270",
+        "is_refund": false
+      },
+      {
+        "id": 45365,
+        "name": "INV/2026/04045",
+        "date": "2026-08-31",
+        "channel": "Horeca",
+        "partner_id": 3077,
+        "partner": "Le Victoria",
+        "untaxed": 170.0,
+        "total": 180.2,
+        "origin": "S06273",
+        "is_refund": false
+      },
+      {
+        "id": 45357,
+        "name": "INV/2026/04039",
+        "date": "2026-08-31",
+        "channel": "GMS",
+        "partner_id": 2864,
+        "partner": "Carrefour Market Bastogne - Pascalino",
+        "untaxed": 130.77,
+        "total": 138.63,
+        "origin": "S06276",
+        "is_refund": false
+      },
+      {
+        "id": 45384,
+        "name": "INV/2026/04053",
+        "date": "2026-08-31",
+        "channel": "Horeca",
+        "partner_id": 60096,
+        "partner": "Maison de Repos Libert",
+        "untaxed": 130.0,
+        "total": 137.8,
+        "origin": "S06262",
+        "is_refund": false
+      },
+      {
+        "id": 45361,
+        "name": "INV/2026/04043",
+        "date": "2026-08-31",
+        "channel": "GMS",
+        "partner_id": 2912,
+        "partner": "Delhaize Le Lion S.A",
+        "untaxed": 118.88,
+        "total": 126.0,
         "origin": "",
         "is_refund": false
       },
       {
-        "id": 45286,
-        "name": "INV3/26-27/0048",
-        "date": "2026-08-29",
+        "id": 45383,
+        "name": "INV/2026/04052",
+        "date": "2026-08-31",
+        "channel": "GMS",
+        "partner_id": 6596,
+        "partner": "Carrefour Belgium",
+        "untaxed": 87.19,
+        "total": 92.43,
+        "origin": "S06263",
+        "is_refund": false
+      },
+      {
+        "id": 45558,
+        "name": "INV/2026/04095",
+        "date": "2026-09-03",
+        "channel": "GMS",
+        "partner_id": 124363,
+        "partner": "Centrale Intermarché",
+        "untaxed": 45.38,
+        "total": 48.1,
+        "origin": "S06275",
+        "is_refund": false
+      },
+      {
+        "id": 45629,
+        "name": "INV/2026/04109",
+        "date": "2026-09-04",
+        "channel": "Revendeurs",
+        "partner_id": 3042,
+        "partner": "La Thé Box",
+        "untaxed": 0.0,
+        "total": 0.0,
+        "origin": "S06281",
+        "is_refund": false
+      },
+      {
+        "id": 45575,
+        "name": "INV3/26-27/0051",
+        "date": "2026-09-03",
         "channel": "Revendeurs",
         "partner_id": 3127,
         "partner": "Marketing Teatower",
         "untaxed": 0.0,
         "total": 0.0,
-        "origin": "Waterloo/4502",
+        "origin": "Waterloo/4602",
         "is_refund": false
       },
       {
-        "id": 45277,
-        "name": "INV3/26-27/0046",
-        "date": "2026-08-29",
+        "id": 45507,
+        "name": "INV2/26-27/0081",
+        "date": "2026-09-02",
         "channel": "Revendeurs",
         "partner_id": 3127,
         "partner": "Marketing Teatower",
         "untaxed": 0.0,
         "total": 0.0,
-        "origin": "Waterloo/4485",
+        "origin": "Namur/15429",
         "is_refund": false
       },
       {
-        "id": 45080,
-        "name": "INV3/26-27/0041",
-        "date": "2026-08-26",
+        "id": 45341,
+        "name": "INV5/26-27/0030",
+        "date": "2026-08-31",
         "channel": "Revendeurs",
         "partner_id": 3127,
         "partner": "Marketing Teatower",
         "untaxed": 0.0,
         "total": 0.0,
-        "origin": "Waterloo/4334 REMBOURSÉ",
+        "origin": "Rocourt/1368",
         "is_refund": false
       },
       {
-        "id": 45087,
-        "name": "INV1/26-27/0041",
-        "date": "2026-08-26",
-        "channel": "Revendeurs",
-        "partner_id": 3127,
-        "partner": "Marketing Teatower",
-        "untaxed": 0.0,
-        "total": 0.0,
-        "origin": "Liege bis/9517",
-        "is_refund": false
-      },
-      {
-        "id": 44952,
-        "name": "INV5/26-27/0027",
-        "date": "2026-08-24",
-        "channel": "Revendeurs",
-        "partner_id": 3127,
-        "partner": "Marketing Teatower",
-        "untaxed": 0.0,
-        "total": 0.0,
-        "origin": "Rocourt/1254",
-        "is_refund": false
-      },
-      {
-        "id": 44965,
-        "name": "INV2/26-27/0069",
-        "date": "2026-08-24",
-        "channel": "Revendeurs",
-        "partner_id": 3127,
-        "partner": "Marketing Teatower",
-        "untaxed": 0.0,
-        "total": 0.0,
-        "origin": "Namur/15137",
-        "is_refund": false
-      },
-      {
-        "id": 45222,
-        "name": "RINV/26-27/0039",
-        "date": "2026-08-28",
-        "channel": "Horeca",
-        "partner_id": 3038,
-        "partner": "La Folle Epoque - Muriel Maron",
+        "id": 45645,
+        "name": "RINV/26-27/0044",
+        "date": "2026-09-04",
+        "channel": "GMS",
+        "partner_id": 6596,
+        "partner": "Carrefour Belgium",
         "untaxed": -10.0,
         "total": -10.6,
-        "origin": "S06221",
+        "origin": "S06008",
+        "is_refund": true
+      },
+      {
+        "id": 45642,
+        "name": "RINV/26-27/0043",
+        "date": "2026-09-04",
+        "channel": "GMS",
+        "partner_id": 6596,
+        "partner": "Carrefour Belgium",
+        "untaxed": -10.0,
+        "total": -10.6,
+        "origin": "S05748",
+        "is_refund": true
+      },
+      {
+        "id": 45571,
+        "name": "RINV/26-27/0042",
+        "date": "2026-09-03",
+        "channel": "GMS",
+        "partner_id": 2912,
+        "partner": "Delhaize Le Lion S.A",
+        "untaxed": -39.62,
+        "total": -42.0,
+        "origin": "",
+        "is_refund": true
+      },
+      {
+        "id": 45502,
+        "name": "RINV/26-27/0041",
+        "date": "2026-09-02",
+        "channel": "Revendeurs",
+        "partner_id": 120394,
+        "partner": "Chez Simone - Elodie Gianello",
+        "untaxed": -152.54,
+        "total": -161.7,
+        "origin": "S05640",
         "is_refund": true
       }
     ]
   },
   "comparaisons": {
     "s_moins_1": {
-      "monday": "2026-08-17",
-      "label": "S34",
-      "range": "17/08-23/08",
-      "ca": 14772.05,
-      "n": 43,
+      "monday": "2026-08-24",
+      "label": "S35",
+      "range": "24/08-30/08",
+      "ca": 11380.6,
+      "n": 34,
       "by_channel": {
-        "GMS": 7533.62,
-        "Horeca": 4799.94,
-        "Revendeurs": 2438.49
+        "GMS": 3149.14,
+        "Horeca": 6657.65,
+        "Revendeurs": 1573.81
       }
     },
-    "delta_s1_pct": -23.0,
-    "moyenne_4s": 12600.19,
-    "delta_moy4_pct": -9.7,
+    "delta_s1_pct": -1.6,
+    "moyenne_4s": 13499.7,
+    "delta_moy4_pct": -17.1,
     "n_1": {
-      "monday": "2025-08-25",
-      "range": "25/08-31/08",
-      "ca": 10045.38,
-      "n": 40,
+      "monday": "2025-09-01",
+      "range": "01/09-07/09",
+      "ca": 17063.58,
+      "n": 53,
       "by_channel": {
-        "GMS": 1008.82,
-        "Horeca": 4921.29,
-        "Revendeurs": 4115.27
+        "GMS": 8733.4,
+        "Horeca": 6532.61,
+        "Revendeurs": 1797.57
       }
     },
-    "delta_n1_pct": 13.3
+    "delta_n1_pct": -34.4
   },
   "historique": [
-    {
-      "monday": "2026-07-27",
-      "label": "S31",
-      "range": "27/07-02/08",
-      "ca": 7782.53,
-      "n": 33,
-      "by_channel": {
-        "GMS": 3144.07,
-        "Horeca": 4377.11,
-        "Revendeurs": 261.35
-      }
-    },
     {
       "monday": "2026-08-03",
       "label": "S32",
@@ -530,343 +554,364 @@
         "GMS": 3149.14,
         "Horeca": 6657.65,
         "Revendeurs": 1573.81
+      }
+    },
+    {
+      "monday": "2026-08-31",
+      "label": "S36",
+      "range": "31/08-06/09",
+      "ca": 11193.61,
+      "n": 37,
+      "by_channel": {
+        "GMS": 6454.44,
+        "Horeca": 3175.96,
+        "Revendeurs": 1563.21
       },
       "is_current": true
     }
   ],
   "top_clients": [
     {
-      "partner": "The Torrefactory Project Sa",
-      "ca": 3157.28,
-      "n": 1,
-      "channel": "Horeca",
-      "partner_id": 3260,
-      "ca_hebdo_moyen_12m": 500.28,
-      "delta_pct": 531.1
-    },
-    {
-      "partner": "SRL Guchet Thunus - Au gré du vent",
-      "ca": 903.43,
-      "n": 1,
-      "channel": "Revendeurs",
-      "partner_id": 7471,
-      "ca_hebdo_moyen_12m": 17.04,
-      "delta_pct": 5200.4
-    },
-    {
       "partner": "Delhaize Le Lion S.A",
-      "ca": 813.35,
-      "n": 3,
+      "ca": 2407.16,
+      "n": 8,
       "channel": "GMS",
       "partner_id": 2912,
-      "ca_hebdo_moyen_12m": 1400.28,
-      "delta_pct": -41.9
+      "ca_hebdo_moyen_12m": 1415.92,
+      "delta_pct": 70.0
     },
     {
-      "partner": "Cafes Delahaut",
-      "ca": 750.0,
+      "partner": "Le Comptoir Local Linkebeek",
+      "ca": 1434.37,
       "n": 1,
-      "channel": "Horeca",
-      "partner_id": 2857,
-      "ca_hebdo_moyen_12m": 618.06,
-      "delta_pct": 21.3
+      "channel": "Revendeurs",
+      "partner_id": 3062,
+      "ca_hebdo_moyen_12m": 127.93,
+      "delta_pct": 1021.3
     },
     {
-      "partner": "Smart fridges srl - Frigo Loco",
-      "ca": 600.0,
-      "n": 1,
-      "channel": "Horeca",
-      "partner_id": 122658,
-      "ca_hebdo_moyen_12m": 27.69,
-      "delta_pct": 2066.7
-    },
-    {
-      "partner": "Spar Beauvechain",
-      "ca": 538.86,
+      "partner": "Carrefour Market Remouchamps",
+      "ca": 814.6,
       "n": 1,
       "channel": "GMS",
-      "partner_id": 124148,
-      "ca_hebdo_moyen_12m": 6.69,
-      "delta_pct": 7949.2
+      "partner_id": 2865,
+      "ca_hebdo_moyen_12m": 240.25,
+      "delta_pct": 239.1
     },
     {
-      "partner": "JM Wines & Events",
-      "ca": 508.16,
+      "partner": "Chili Peppers - Intermarché Tilf",
+      "ca": 761.43,
+      "n": 1,
+      "channel": "GMS",
+      "partner_id": 116869,
+      "ca_hebdo_moyen_12m": 140.87,
+      "delta_pct": 440.5
+    },
+    {
+      "partner": "Carrefour Belgium",
+      "ca": 691.28,
+      "n": 4,
+      "channel": "GMS",
+      "partner_id": 6596,
+      "ca_hebdo_moyen_12m": 1048.59,
+      "delta_pct": -34.1
+    },
+    {
+      "partner": "Cafés Antillia",
+      "ca": 562.5,
       "n": 1,
       "channel": "Horeca",
-      "partner_id": 126328,
+      "partner_id": 2856,
+      "ca_hebdo_moyen_12m": 176.97,
+      "delta_pct": 217.8
+    },
+    {
+      "partner": "AD Delhaize Fernelmont (Fernel-Dis SRL n°43132)",
+      "ca": 553.75,
+      "n": 1,
+      "channel": "GMS",
+      "partner_id": 2952,
+      "ca_hebdo_moyen_12m": 89.56,
+      "delta_pct": 518.3
+    },
+    {
+      "partner": "Proxy Idalie",
+      "ca": 534.94,
+      "n": 1,
+      "channel": "GMS",
+      "partner_id": 126586,
       "ca_hebdo_moyen_12m": 0.0,
       "delta_pct": null
     },
     {
-      "partner": "Le Pré Vert S.A.",
-      "ca": 502.6,
+      "partner": "Sorescol S.A.",
+      "ca": 397.5,
       "n": 1,
       "channel": "Horeca",
-      "partner_id": 3076,
-      "ca_hebdo_moyen_12m": 48.4,
-      "delta_pct": 938.4
+      "partner_id": 3245,
+      "ca_hebdo_moyen_12m": 299.05,
+      "delta_pct": 32.9
     },
     {
-      "partner": "Carrefour Belgium",
-      "ca": 492.32,
+      "partner": "Silversquare Belgium",
+      "ca": 385.99,
+      "n": 1,
+      "channel": "Horeca",
+      "partner_id": 10102,
+      "ca_hebdo_moyen_12m": 35.58,
+      "delta_pct": 984.7
+    },
+    {
+      "partner": "SPRL Immo-construction - Sandra DURY",
+      "ca": 383.97,
+      "n": 1,
+      "channel": "Horeca",
+      "partner_id": 3220,
+      "ca_hebdo_moyen_12m": 0.0,
+      "delta_pct": null
+    },
+    {
+      "partner": "Cafes Delahaut",
+      "ca": 375.0,
+      "n": 1,
+      "channel": "Horeca",
+      "partner_id": 2857,
+      "ca_hebdo_moyen_12m": 613.73,
+      "delta_pct": -38.9
+    },
+    {
+      "partner": "Mouch Et Martine",
+      "ca": 330.83,
+      "n": 1,
+      "channel": "Horeca",
+      "partner_id": 126500,
+      "ca_hebdo_moyen_12m": 0.0,
+      "delta_pct": null
+    },
+    {
+      "partner": "SA Marer - AD Rochefort",
+      "ca": 290.59,
       "n": 1,
       "channel": "GMS",
-      "partner_id": 6596,
-      "ca_hebdo_moyen_12m": 1045.26,
-      "delta_pct": -52.9
+      "partner_id": 7692,
+      "ca_hebdo_moyen_12m": 57.27,
+      "delta_pct": 407.4
     },
     {
-      "partner": "Cocon Life store",
-      "ca": 394.73,
+      "partner": "B&M Communication et Management SRL",
+      "ca": 281.38,
       "n": 1,
       "channel": "Revendeurs",
-      "partner_id": 2889,
-      "ca_hebdo_moyen_12m": 118.09,
-      "delta_pct": 234.3
-    },
-    {
-      "partner": "Windmill SA - Intermarché Bouge",
-      "ca": 381.71,
-      "n": 1,
-      "channel": "GMS",
-      "partner_id": 3297,
-      "ca_hebdo_moyen_12m": 46.99,
-      "delta_pct": 712.3
-    },
-    {
-      "partner": "Carrefour Market Uccle Bascule",
-      "ca": 338.81,
-      "n": 1,
-      "channel": "GMS",
-      "partner_id": 2866,
-      "ca_hebdo_moyen_12m": 60.0,
-      "delta_pct": 464.7
-    },
-    {
-      "partner": "Baaz & Co SRL ( Indian Royal)",
-      "ca": 244.71,
-      "n": 1,
-      "channel": "Horeca",
-      "partner_id": 3292,
-      "ca_hebdo_moyen_12m": 3.65,
-      "delta_pct": 6597.3
-    },
-    {
-      "partner": "La Folle Epoque - Muriel Maron",
-      "ca": 240.0,
-      "n": 3,
-      "channel": "Horeca",
-      "partner_id": 3038,
-      "ca_hebdo_moyen_12m": 27.88,
-      "delta_pct": 760.7
-    },
-    {
-      "partner": "Cafés Antillia",
-      "ca": 235.0,
-      "n": 1,
-      "channel": "Horeca",
-      "partner_id": 2856,
-      "ca_hebdo_moyen_12m": 172.45,
-      "delta_pct": 36.3
+      "partner_id": 2809,
+      "ca_hebdo_moyen_12m": 12.01,
+      "delta_pct": 2242.0
     }
   ],
   "top_produits": [
     {
-      "product_id": 4625,
-      "label": "[HC250880] Blue earl grey_ BE-BIO-01 25 enveloppes",
-      "qty": 178.0,
-      "ca": 1254.6,
-      "ca_prev": 609.1,
-      "delta_pct": 106.0
-    },
-    {
-      "product_id": 4609,
-      "label": "[HC250628] Oasis du désert_ BE-BIO-01 25 enveloppes",
-      "qty": 133.0,
-      "ca": 1013.05,
-      "ca_prev": 1209.1,
-      "delta_pct": -16.2
-    },
-    {
-      "product_id": 4613,
-      "label": "[HC250669] Vert Jasmin 25 enveloppes",
-      "qty": 111.0,
-      "ca": 818.1,
-      "ca_prev": 656.6,
-      "delta_pct": 24.6
-    },
-    {
-      "product_id": 4601,
-      "label": "[HC250279] Le panier de grand maman 25 enveloppes",
-      "qty": 94.0,
-      "ca": 693.9,
-      "ca_prev": 769.1,
-      "delta_pct": -9.8
-    },
-    {
-      "product_id": 4616,
-      "label": "[HC250735] Pêche de vigne_ BE-BIO-01 25 enveloppes",
-      "qty": 85.0,
-      "ca": 620.6,
-      "ca_prev": 170.0,
-      "delta_pct": 265.1
-    },
-    {
-      "product_id": 4608,
-      "label": "[HC250626] Sencha_BE-BIO-01 - 25 enveloppes",
-      "qty": 69.0,
-      "ca": 481.45,
-      "ca_prev": 432.5,
-      "delta_pct": 11.3
-    },
-    {
-      "product_id": 4572,
-      "label": "[GI0735] Pêche de Vigne - BIO glacée",
-      "qty": 72.0,
-      "ca": 452.69,
-      "ca_prev": 621.09,
-      "delta_pct": -27.1
-    },
-    {
-      "product_id": 4612,
-      "label": "[HC250666] English Breakfast 25 enveloppes",
-      "qty": 60.0,
-      "ca": 416.45,
-      "ca_prev": 399.1,
-      "delta_pct": 4.3
+      "product_id": 4635,
+      "label": "[I0279] Le panier de grand maman (20 infusettes)",
+      "qty": 95.0,
+      "ca": 704.52,
+      "ca_prev": 232.47,
+      "delta_pct": 203.1
     },
     {
       "product_id": 4578,
       "label": "[GI0832] La Nana de Wépion glacée",
-      "qty": 66.0,
-      "ca": 414.06,
-      "ca_prev": 595.99,
-      "delta_pct": -30.5
+      "qty": 93.0,
+      "ca": 583.47,
+      "ca_prev": 414.06,
+      "delta_pct": 40.9
     },
     {
-      "product_id": 4571,
-      "label": "[GI0634] Gourmandise glacée",
-      "qty": 48.0,
-      "ca": 296.74,
-      "ca_prev": 319.95,
-      "delta_pct": -7.3
-    },
-    {
-      "product_id": 4574,
-      "label": "[GI0820] Marrakech Sunset - BIO glacé",
-      "qty": 41.0,
-      "ca": 258.21,
-      "ca_prev": 307.41,
-      "delta_pct": -16.0
-    },
-    {
-      "product_id": 4763,
-      "label": "[I0880] Blue Earl Grey BIO (20 infusettes)",
-      "qty": 35.0,
-      "ca": 254.32,
-      "ca_prev": 196.19,
-      "delta_pct": 29.6
-    },
-    {
-      "product_id": 5221,
-      "label": "[V0895] Matcha japonais",
-      "qty": 20.0,
-      "ca": 245.28,
-      "ca_prev": 79.25,
-      "delta_pct": 209.5
-    },
-    {
-      "product_id": 4635,
-      "label": "[I0279] Le panier de grand maman (20 infusettes)",
-      "qty": 32.0,
-      "ca": 232.47,
-      "ca_prev": 280.18,
-      "delta_pct": -17.0
+      "product_id": 4572,
+      "label": "[GI0735] Pêche de Vigne - BIO glacée",
+      "qty": 80.0,
+      "ca": 501.9,
+      "ca_prev": 452.69,
+      "delta_pct": 10.9
     },
     {
       "product_id": 7061,
       "label": "[GI0912] Passion Exotique - Infusion de fruits : Mangue - Passion",
+      "qty": 76.0,
+      "ca": 478.78,
+      "ca_prev": 219.99,
+      "delta_pct": 117.6
+    },
+    {
+      "product_id": 4601,
+      "label": "[HC250279] Le panier de grand maman 25 enveloppes",
+      "qty": 59.0,
+      "ca": 467.5,
+      "ca_prev": 693.9,
+      "delta_pct": -32.6
+    },
+    {
+      "product_id": 4574,
+      "label": "[GI0820] Marrakech Sunset - BIO glacé",
+      "qty": 67.0,
+      "ca": 420.34,
+      "ca_prev": 258.21,
+      "delta_pct": 62.8
+    },
+    {
+      "product_id": 4689,
+      "label": "[I0735] Pêche de vigne - BIO (20 infusettes)",
+      "qty": 53.0,
+      "ca": 399.44,
+      "ca_prev": 217.92,
+      "delta_pct": 83.3
+    },
+    {
+      "product_id": 4763,
+      "label": "[I0880] Blue Earl Grey BIO (20 infusettes)",
+      "qty": 53.0,
+      "ca": 387.08,
+      "ca_prev": 254.32,
+      "delta_pct": 52.2
+    },
+    {
+      "product_id": 4613,
+      "label": "[HC250669] Vert Jasmin 25 enveloppes",
+      "qty": 49.0,
+      "ca": 377.5,
+      "ca_prev": 818.1,
+      "delta_pct": -53.9
+    },
+    {
+      "product_id": 4571,
+      "label": "[GI0634] Gourmandise glacée",
+      "qty": 54.0,
+      "ca": 338.78,
+      "ca_prev": 296.74,
+      "delta_pct": 14.2
+    },
+    {
+      "product_id": 7451,
+      "label": "[GI0916] Vergers d’Été: saveurs: Pomme - Poire",
+      "qty": 52.0,
+      "ca": 329.54,
+      "ca_prev": 150.57,
+      "delta_pct": 118.9
+    },
+    {
+      "product_id": 4725,
+      "label": "[I0832] La Nana de Wépion (20 infusettes)",
+      "qty": 45.0,
+      "ca": 328.88,
+      "ca_prev": 79.91,
+      "delta_pct": 311.6
+    },
+    {
+      "product_id": 4609,
+      "label": "[HC250628] Oasis du désert_ BE-BIO-01 25 enveloppes",
       "qty": 34.0,
-      "ca": 219.99,
-      "ca_prev": 508.16,
-      "delta_pct": -56.7
+      "ca": 305.0,
+      "ca_prev": 1013.05,
+      "delta_pct": -69.9
+    },
+    {
+      "product_id": 4660,
+      "label": "[I0631] Le thé des amoureux (20 infusettes)",
+      "qty": 38.0,
+      "ca": 278.04,
+      "ca_prev": 124.81,
+      "delta_pct": 122.8
+    },
+    {
+      "product_id": 4752,
+      "label": "[I0868] Citron meringué (20 infusettes)",
+      "qty": 36.0,
+      "ca": 261.51,
+      "ca_prev": 101.7,
+      "delta_pct": 157.1
     }
   ],
   "nouveaux_clients": [
     {
-      "partner": "JM Wines & Events",
-      "ca": 508.16,
+      "partner": "Proxy Idalie",
+      "ca": 534.94,
       "n": 1,
-      "channel": "Horeca",
-      "partner_id": 126328,
+      "channel": "GMS",
+      "partner_id": 126586,
       "ca_hebdo_moyen_12m": 0.0,
       "delta_pct": null
     },
     {
-      "partner": "Le Perron de l'Ilon - L'Escale - Abdallah AL CHARIF",
-      "ca": 84.9,
+      "partner": "Mouch Et Martine",
+      "ca": 330.83,
       "n": 1,
       "channel": "Horeca",
-      "partner_id": 3075,
+      "partner_id": 126500,
       "ca_hebdo_moyen_12m": 0.0,
       "delta_pct": null
     }
   ],
   "reactives": [
     {
-      "partner": "SRL Guchet Thunus - Au gré du vent",
-      "ca": 903.43,
+      "partner": "Le Comptoir Local Linkebeek",
+      "ca": 1434.37,
       "n": 1,
       "channel": "Revendeurs",
-      "partner_id": 7471,
-      "last_seen": "2025-11-20",
-      "gap_days": 277
+      "partner_id": 3062,
+      "last_seen": "2026-05-28",
+      "gap_days": 95
     },
     {
-      "partner": "Spar Beauvechain",
-      "ca": 538.86,
-      "n": 1,
-      "channel": "GMS",
-      "partner_id": 124148,
-      "last_seen": "2026-06-04",
-      "gap_days": 81
-    },
-    {
-      "partner": "Le Pré Vert S.A.",
-      "ca": 502.6,
+      "partner": "Silversquare Belgium",
+      "ca": 385.99,
       "n": 1,
       "channel": "Horeca",
-      "partner_id": 3076,
-      "last_seen": "2026-05-19",
-      "gap_days": 97
+      "partner_id": 10102,
+      "last_seen": "2026-05-28",
+      "gap_days": 95
     },
     {
-      "partner": "Baaz & Co SRL ( Indian Royal)",
-      "ca": 244.71,
+      "partner": "SPRL Immo-construction - Sandra DURY",
+      "ca": 383.97,
       "n": 1,
       "channel": "Horeca",
-      "partner_id": 3292,
-      "last_seen": "2025-11-17",
-      "gap_days": 280
+      "partner_id": 3220,
+      "last_seen": null,
+      "gap_days": null
     },
     {
-      "partner": "La Folle Epoque - Muriel Maron",
-      "ca": 240.0,
-      "n": 3,
-      "channel": "Horeca",
-      "partner_id": 3038,
-      "last_seen": "2026-06-04",
-      "gap_days": 81
-    },
-    {
-      "partner": "ORSA FUND SA",
-      "ca": 84.04,
+      "partner": "B&M Communication et Management SRL",
+      "ca": 281.38,
       "n": 1,
       "channel": "Revendeurs",
-      "partner_id": 2996,
-      "last_seen": "2026-02-11",
-      "gap_days": 194
+      "partner_id": 2809,
+      "last_seen": "2025-12-12",
+      "gap_days": 262
+    },
+    {
+      "partner": "Le Victoria",
+      "ca": 170.0,
+      "n": 1,
+      "channel": "Horeca",
+      "partner_id": 3077,
+      "last_seen": "2026-02-04",
+      "gap_days": 208
+    },
+    {
+      "partner": "Maison de Repos Libert",
+      "ca": 130.0,
+      "n": 1,
+      "channel": "Horeca",
+      "partner_id": 60096,
+      "last_seen": "2026-06-09",
+      "gap_days": 83
+    },
+    {
+      "partner": "La Thé Box",
+      "ca": 0.0,
+      "n": 1,
+      "channel": "Revendeurs",
+      "partner_id": 3042,
+      "last_seen": "2026-06-04",
+      "gap_days": 88
     }
   ],
   "dormants": [
@@ -875,16 +920,16 @@
       "partner_id": 5540,
       "channel": "GMS",
       "last_seen": "2026-01-09",
-      "gap_days": 233,
-      "ca_12m": 32039.02,
-      "n_12m": 81
+      "gap_days": 240,
+      "ca_12m": 31814.47,
+      "n_12m": 80
     },
     {
       "partner": "Vilna Gaon S.R.L",
       "partner_id": 3286,
       "channel": "Revendeurs",
       "last_seen": "2026-06-30",
-      "gap_days": 61,
+      "gap_days": 68,
       "ca_12m": 14364.82,
       "n_12m": 8
     },
@@ -893,7 +938,7 @@
       "partner_id": 3141,
       "channel": "Revendeurs",
       "last_seen": "2026-06-04",
-      "gap_days": 87,
+      "gap_days": 94,
       "ca_12m": 12936.9,
       "n_12m": 10
     },
@@ -902,7 +947,7 @@
       "partner_id": 3276,
       "channel": "Revendeurs",
       "last_seen": "2026-05-28",
-      "gap_days": 94,
+      "gap_days": 101,
       "ca_12m": 12500.0,
       "n_12m": 3
     },
@@ -911,25 +956,25 @@
       "partner_id": 2858,
       "channel": "Horeca",
       "last_seen": "2026-06-24",
-      "gap_days": 67,
+      "gap_days": 74,
       "ca_12m": 9816.98,
       "n_12m": 10
     },
     {
-      "partner": "Le Comptoir Local Linkebeek",
-      "partner_id": 3062,
-      "channel": "Revendeurs",
-      "last_seen": "2026-05-28",
-      "gap_days": 94,
-      "ca_12m": 6652.15,
-      "n_12m": 8
+      "partner": "SA Brasserie Delsart",
+      "partner_id": 59870,
+      "channel": "Horeca",
+      "last_seen": "2026-07-06",
+      "gap_days": 62,
+      "ca_12m": 7290.0,
+      "n_12m": 10
     },
     {
       "partner": "Moulins Burette s.a.",
       "partner_id": 3143,
       "channel": "Revendeurs",
       "last_seen": "2026-06-30",
-      "gap_days": 61,
+      "gap_days": 68,
       "ca_12m": 6248.28,
       "n_12m": 7
     },
@@ -938,7 +983,7 @@
       "partner_id": 3273,
       "channel": "Horeca",
       "last_seen": "2026-06-24",
-      "gap_days": 67,
+      "gap_days": 74,
       "ca_12m": 5601.21,
       "n_12m": 6
     },
@@ -947,7 +992,7 @@
       "partner_id": 3153,
       "channel": "GMS",
       "last_seen": "2026-06-04",
-      "gap_days": 87,
+      "gap_days": 94,
       "ca_12m": 4040.99,
       "n_12m": 11
     },
@@ -956,7 +1001,7 @@
       "partner_id": 3041,
       "channel": "Revendeurs",
       "last_seen": "2026-05-19",
-      "gap_days": 103,
+      "gap_days": 110,
       "ca_12m": 3947.75,
       "n_12m": 4
     },
@@ -965,16 +1010,34 @@
       "partner_id": 2800,
       "channel": "Revendeurs",
       "last_seen": "2026-06-04",
-      "gap_days": 87,
+      "gap_days": 94,
       "ca_12m": 3821.24,
       "n_12m": 8
+    },
+    {
+      "partner": "SA VILLERSEM - Intermarché Villers Le Bouillet",
+      "partner_id": 115879,
+      "channel": "GMS",
+      "last_seen": "2026-07-03",
+      "gap_days": 65,
+      "ca_12m": 3803.76,
+      "n_12m": 11
+    },
+    {
+      "partner": "Ma Pharmacie de Baillonville - Bayet Sarah",
+      "partner_id": 3184,
+      "channel": "Revendeurs",
+      "last_seen": "2026-07-03",
+      "gap_days": 65,
+      "ca_12m": 3615.43,
+      "n_12m": 14
     },
     {
       "partner": "La Vitrine Locale SRL",
       "partner_id": 3044,
       "channel": "Horeca",
       "last_seen": "2025-12-30",
-      "gap_days": 243,
+      "gap_days": 250,
       "ca_12m": 3501.0,
       "n_12m": 4
     },
@@ -983,7 +1046,7 @@
       "partner_id": 2973,
       "channel": "Revendeurs",
       "last_seen": "2026-03-19",
-      "gap_days": 164,
+      "gap_days": 171,
       "ca_12m": 3412.69,
       "n_12m": 5
     },
@@ -992,7 +1055,7 @@
       "partner_id": 7446,
       "channel": "Horeca",
       "last_seen": "2026-04-30",
-      "gap_days": 122,
+      "gap_days": 129,
       "ca_12m": 3255.0,
       "n_12m": 6
     },
@@ -1001,7 +1064,7 @@
       "partner_id": 3293,
       "channel": "Revendeurs",
       "last_seen": "2026-06-09",
-      "gap_days": 82,
+      "gap_days": 89,
       "ca_12m": 3212.04,
       "n_12m": 3
     },
@@ -1010,7 +1073,7 @@
       "partner_id": 2965,
       "channel": "GMS",
       "last_seen": "2026-05-29",
-      "gap_days": 93,
+      "gap_days": 100,
       "ca_12m": 3023.81,
       "n_12m": 12
     },
@@ -1019,257 +1082,234 @@
       "partner_id": 121026,
       "channel": "Revendeurs",
       "last_seen": "2026-06-30",
-      "gap_days": 61,
+      "gap_days": 68,
       "ca_12m": 2985.93,
       "n_12m": 5
-    },
-    {
-      "partner": "Les Cafés Saint-Médard",
-      "partner_id": 3086,
-      "channel": "Horeca",
-      "last_seen": "2025-11-26",
-      "gap_days": 277,
-      "ca_12m": 2755.0,
-      "n_12m": 3
     },
     {
       "partner": "La Fondation contre le Cancer",
       "partner_id": 59809,
       "channel": "Revendeurs",
       "last_seen": "2025-10-24",
-      "gap_days": 310,
+      "gap_days": 317,
       "ca_12m": 2547.0,
       "n_12m": 1
-    },
-    {
-      "partner": "AD Dolhain - Ets Alpo sa",
-      "partner_id": 59928,
-      "channel": "GMS",
-      "last_seen": "2026-05-20",
-      "gap_days": 102,
-      "ca_12m": 2415.78,
-      "n_12m": 7
     }
   ],
   "dormants_total": {
-    "nb": 324,
-    "ca_12m": 280876.67
+    "nb": 320,
+    "ca_12m": 285696.57
   },
   "commandes": {
-    "nb": 26,
-    "total_ht": 11805.84,
+    "nb": 34,
+    "total_ht": 12889.01,
     "by_channel": {
-      "GMS": 3236.33,
-      "Horeca": 5674.68,
-      "Revendeurs": 2894.83
+      "GMS": 7203.0,
+      "Horeca": 5046.69,
+      "Revendeurs": 639.32
     },
     "vendeurs": [
       {
         "user": "Teatower team",
-        "ca": 9445.28,
-        "n": 17
+        "ca": 6963.78,
+        "n": 19
       },
       {
         "user": "Nicolas Raes",
-        "ca": 2260.56,
-        "n": 8
-      },
-      {
-        "user": "jerome.carlier@teatower.com",
-        "ca": 100.0,
-        "n": 1
+        "ca": 5925.23,
+        "n": 15
       }
     ],
     "items": [
       {
-        "name": "S06245",
-        "partner": "The Torrefactory Project Sa",
+        "name": "S06285",
+        "partner": "PC DISTRIBUTION SRL - Point Chaud",
         "channel": "Horeca",
-        "untaxed": 3157.28,
-        "date": "2026-08-26",
+        "untaxed": 1387.5,
+        "date": "2026-09-01",
         "user": "Teatower team"
       },
       {
-        "name": "S06257",
-        "partner": "Le Comptoir Local Linkebeek",
-        "channel": "Revendeurs",
-        "untaxed": 1434.37,
-        "date": "2026-08-28",
-        "user": "Teatower team"
-      },
-      {
-        "name": "S06236",
-        "partner": "SRL Guchet Thunus - Au gré du vent",
-        "channel": "Revendeurs",
-        "untaxed": 903.43,
-        "date": "2026-08-25",
-        "user": "Teatower team"
-      },
-      {
-        "name": "S06235",
-        "partner": "Smart fridges srl - Frigo Loco",
-        "channel": "Horeca",
-        "untaxed": 600.0,
-        "date": "2026-08-25",
-        "user": "Teatower team"
-      },
-      {
-        "name": "S06249",
-        "partner": "Spar Beauvechain",
+        "name": "S06299",
+        "partner": "Carrefour Market Remouchamps",
         "channel": "GMS",
-        "untaxed": 538.86,
-        "date": "2026-08-26",
-        "user": "Teatower team"
+        "untaxed": 814.6,
+        "date": "2026-09-03",
+        "user": "Nicolas Raes"
       },
       {
-        "name": "S06244",
-        "partner": "Le Pré Vert S.A.",
+        "name": "S06300",
+        "partner": "Chili Peppers - Intermarché Tilf",
+        "channel": "GMS",
+        "untaxed": 761.43,
+        "date": "2026-09-03",
+        "user": "Nicolas Raes"
+      },
+      {
+        "name": "S06292",
+        "partner": "VIGNEE MANAGEMENT SRL - Chateau De Vignée",
         "channel": "Horeca",
-        "untaxed": 502.6,
-        "date": "2026-08-26",
+        "untaxed": 636.76,
+        "date": "2026-09-04",
         "user": "Teatower team"
       },
       {
-        "name": "S06233",
+        "name": "S06282",
         "partner": "Carrefour Belgium",
         "channel": "GMS",
-        "untaxed": 492.32,
-        "date": "2026-08-24",
+        "untaxed": 624.09,
+        "date": "2026-09-01",
         "user": "Nicolas Raes"
       },
       {
-        "name": "S06253",
+        "name": "S06280",
         "partner": "Delhaize Le Lion S.A",
         "channel": "GMS",
-        "untaxed": 435.2,
-        "date": "2026-08-26",
+        "untaxed": 616.15,
+        "date": "2026-08-31",
         "user": "Nicolas Raes"
       },
       {
-        "name": "S06267",
-        "partner": "SPRL Immo-construction - Sandra DURY",
-        "channel": "Horeca",
-        "untaxed": 383.97,
-        "date": "2026-08-28",
-        "user": "Teatower team"
-      },
-      {
-        "name": "S06230",
-        "partner": "Windmill SA - Intermarché Bouge",
-        "channel": "GMS",
-        "untaxed": 381.71,
-        "date": "2026-08-24",
-        "user": "Nicolas Raes"
-      },
-      {
-        "name": "S06252",
-        "partner": "Carrefour Market Uccle Bascule",
-        "channel": "GMS",
-        "untaxed": 338.81,
-        "date": "2026-08-26",
-        "user": "Nicolas Raes"
-      },
-      {
-        "name": "S06256",
-        "partner": "Mouch Et Martine",
-        "channel": "Horeca",
-        "untaxed": 330.83,
-        "date": "2026-08-28",
-        "user": "Teatower team"
-      },
-      {
-        "name": "S06261",
-        "partner": "B&M Communication et Management SRL",
-        "channel": "Revendeurs",
-        "untaxed": 281.38,
-        "date": "2026-08-28",
-        "user": "Teatower team"
-      },
-      {
-        "name": "S06246",
-        "partner": "Center Parcs Ardennen NV",
-        "channel": "Horeca",
-        "untaxed": 235.0,
-        "date": "2026-08-26",
-        "user": "Teatower team"
-      },
-      {
-        "name": "S06242",
+        "name": "S06291",
         "partner": "Cafés Antillia",
         "channel": "Horeca",
-        "untaxed": 235.0,
-        "date": "2026-08-25",
+        "untaxed": 562.5,
+        "date": "2026-09-02",
         "user": "Teatower team"
       },
       {
-        "name": "S06248",
-        "partner": "Delhaize Le Lion S.A",
+        "name": "S06302",
+        "partner": "AD Delhaize Fernelmont (Fernel-Dis SRL n°43132)",
         "channel": "GMS",
-        "untaxed": 198.2,
-        "date": "2026-08-26",
-        "user": "Teatower team"
-      },
-      {
-        "name": "S06227",
-        "partner": "La Vieille Demeure",
-        "channel": "Revendeurs",
-        "untaxed": 191.61,
-        "date": "2026-08-24",
-        "user": "Teatower team"
-      },
-      {
-        "name": "S06231",
-        "partner": "Delhaize Le Lion S.A",
-        "channel": "GMS",
-        "untaxed": 179.95,
-        "date": "2026-08-24",
+        "untaxed": 553.75,
+        "date": "2026-09-03",
         "user": "Nicolas Raes"
       },
       {
-        "name": "S06251",
-        "partner": "Intermarché Forest - FREYARVOR",
+        "name": "S06272",
+        "partner": "Proxy Idalie",
         "channel": "GMS",
-        "untaxed": 157.85,
-        "date": "2026-08-26",
+        "untaxed": 534.94,
+        "date": "2026-08-31",
+        "user": "Teatower team"
+      },
+      {
+        "name": "S06279",
+        "partner": "Delhaize Le Lion S.A",
+        "channel": "GMS",
+        "untaxed": 477.77,
+        "date": "2026-08-31",
         "user": "Nicolas Raes"
       },
       {
-        "name": "S06234",
-        "partner": "Centrale Intermarché",
+        "name": "S06305",
+        "partner": "Delhaize Le Lion S.A",
         "channel": "GMS",
-        "untaxed": 151.52,
-        "date": "2026-08-25",
+        "untaxed": 471.49,
+        "date": "2026-09-04",
         "user": "Teatower team"
+      },
+      {
+        "name": "S06284",
+        "partner": "Sorescol S.A.",
+        "channel": "Horeca",
+        "untaxed": 397.5,
+        "date": "2026-09-01",
+        "user": "Teatower team"
+      },
+      {
+        "name": "S06287",
+        "partner": "Silversquare Belgium",
+        "channel": "Horeca",
+        "untaxed": 385.99,
+        "date": "2026-09-01",
+        "user": "Teatower team"
+      },
+      {
+        "name": "S06271",
+        "partner": "Cafes Delahaut",
+        "channel": "Horeca",
+        "untaxed": 375.0,
+        "date": "2026-08-31",
+        "user": "Teatower team"
+      },
+      {
+        "name": "S06304",
+        "partner": "Ferme Bonair",
+        "channel": "Horeca",
+        "untaxed": 353.77,
+        "date": "2026-09-04",
+        "user": "Teatower team"
+      },
+      {
+        "name": "S06278",
+        "partner": "Delhaize Le Lion S.A",
+        "channel": "GMS",
+        "untaxed": 348.04,
+        "date": "2026-08-31",
+        "user": "Nicolas Raes"
+      },
+      {
+        "name": "S06310",
+        "partner": "Cafes Delahaut",
+        "channel": "Horeca",
+        "untaxed": 337.5,
+        "date": "2026-09-04",
+        "user": "Teatower team"
+      },
+      {
+        "name": "S06283",
+        "partner": "Delhaize Le Lion S.A",
+        "channel": "GMS",
+        "untaxed": 331.2,
+        "date": "2026-09-01",
+        "user": "Nicolas Raes"
+      },
+      {
+        "name": "S06298",
+        "partner": "Delhaize Le Lion S.A",
+        "channel": "GMS",
+        "untaxed": 311.72,
+        "date": "2026-09-03",
+        "user": "Nicolas Raes"
+      },
+      {
+        "name": "S06288",
+        "partner": "SA Marer - AD Rochefort",
+        "channel": "GMS",
+        "untaxed": 290.59,
+        "date": "2026-09-01",
+        "user": "Nicolas Raes"
       }
     ]
   },
   "mtd": {
-    "depuis": "2026-08-01",
-    "total_ht": 53998.82,
+    "depuis": "2026-09-01",
+    "total_ht": 5886.24,
     "by_channel": {
-      "GMS": 28565.18,
-      "Horeca": 16123.78,
-      "Revendeurs": 9309.86
+      "GMS": 4432.62,
+      "Horeca": 1606.16,
+      "Revendeurs": -152.54
     },
-    "nb_factures": 176
+    "nb_factures": 21
   },
   "ytd": {
-    "total_ht": 575110.96,
+    "total_ht": 586216.06,
     "by_channel": {
-      "GMS": 269115.75,
-      "Horeca": 174195.53,
-      "Revendeurs": 131799.68
+      "GMS": 275570.19,
+      "Horeca": 177371.49,
+      "Revendeurs": 133274.38
     },
-    "nb_factures": 1737,
-    "n_1": 358118.39,
-    "delta_pct": 60.6,
+    "nb_factures": 1773,
+    "n_1": 375101.31,
+    "delta_pct": 56.3,
     "note": "Aucune facture B2B en base avant 2025-04-01 : le YTD N-1 est tronque, le delta brut n'est pas exploitable. Utiliser la comparaison recalee depuis 04/2025.",
     "comparable": {
       "depuis": "2026-04-01",
       "depuis_n_1": "2025-04-01",
-      "ca": 353966.49,
-      "ca_n_1": 358118.39,
-      "delta_pct": -1.2
+      "ca": 365160.1,
+      "ca_n_1": 375101.31,
+      "delta_pct": -2.7
     }
   },
   "drafts": {
@@ -1342,9 +1382,19 @@
     ]
   },
   "pipeline": {
-    "nb": 17,
-    "total_ht": 6775.83,
+    "nb": 22,
+    "total_ht": 10513.69,
     "items": [
+      {
+        "name": "S06274",
+        "partner": "Pharmacie Saint Pierre SA",
+        "channel": "Revendeurs",
+        "untaxed": 2040.56,
+        "date": "2026-08-31",
+        "state": "draft",
+        "age_days": 6,
+        "user": "jerome.carlier@teatower.com"
+      },
       {
         "name": "S06217",
         "partner": "Cocon Life store",
@@ -1352,7 +1402,17 @@
         "untaxed": 1794.54,
         "date": "2026-08-21",
         "state": "draft",
-        "age_days": 10,
+        "age_days": 16,
+        "user": "Teatower team"
+      },
+      {
+        "name": "S06295",
+        "partner": "Pharmacie Tilman S.A. - Mikael Tilman",
+        "channel": "Revendeurs",
+        "untaxed": 895.49,
+        "date": "2026-09-03",
+        "state": "draft",
+        "age_days": 3,
         "user": "Teatower team"
       },
       {
@@ -1362,7 +1422,7 @@
         "untaxed": 606.21,
         "date": "2026-08-20",
         "state": "draft",
-        "age_days": 11,
+        "age_days": 17,
         "user": "Teatower team"
       },
       {
@@ -1372,7 +1432,7 @@
         "untaxed": 574.5,
         "date": "2026-08-20",
         "state": "draft",
-        "age_days": 11,
+        "age_days": 17,
         "user": "Teatower team"
       },
       {
@@ -1382,7 +1442,7 @@
         "untaxed": 544.81,
         "date": "2026-05-13",
         "state": "draft",
-        "age_days": 110,
+        "age_days": 116,
         "user": "Nicolas Raes"
       },
       {
@@ -1392,7 +1452,17 @@
         "untaxed": 466.24,
         "date": "2026-08-21",
         "state": "draft",
-        "age_days": 10,
+        "age_days": 16,
+        "user": "Teatower team"
+      },
+      {
+        "name": "S06259",
+        "partner": "Nouvel Air Coiffure",
+        "channel": "Revendeurs",
+        "untaxed": 435.07,
+        "date": "2026-08-28",
+        "state": "draft",
+        "age_days": 9,
         "user": "Teatower team"
       },
       {
@@ -1402,7 +1472,7 @@
         "untaxed": 384.34,
         "date": "2026-08-25",
         "state": "draft",
-        "age_days": 6,
+        "age_days": 12,
         "user": "Teatower team"
       },
       {
@@ -1412,7 +1482,17 @@
         "untaxed": 380.36,
         "date": "2026-08-21",
         "state": "draft",
-        "age_days": 10,
+        "age_days": 16,
+        "user": "Teatower team"
+      },
+      {
+        "name": "S06269",
+        "partner": "Delhaize Le Lion S.A",
+        "channel": "GMS",
+        "untaxed": 334.83,
+        "date": "2026-08-31",
+        "state": "draft",
+        "age_days": 6,
         "user": "Teatower team"
       },
       {
@@ -1422,17 +1502,7 @@
         "untaxed": 283.02,
         "date": "2026-08-21",
         "state": "sent",
-        "age_days": 10,
-        "user": "Teatower team"
-      },
-      {
-        "name": "S06259",
-        "partner": "Nouvel Air Coiffure",
-        "channel": "Revendeurs",
-        "untaxed": 279.34,
-        "date": "2026-08-28",
-        "state": "draft",
-        "age_days": 3,
+        "age_days": 16,
         "user": "Teatower team"
       },
       {
@@ -1442,7 +1512,7 @@
         "untaxed": 240.79,
         "date": "2026-08-26",
         "state": "draft",
-        "age_days": 5,
+        "age_days": 11,
         "user": "Teatower team"
       },
       {
@@ -1452,7 +1522,7 @@
         "untaxed": 237.75,
         "date": "2026-08-25",
         "state": "draft",
-        "age_days": 6,
+        "age_days": 12,
         "user": "jerome.carlier@teatower.com"
       },
       {
@@ -1462,38 +1532,8 @@
         "untaxed": 235.43,
         "date": "2026-08-19",
         "state": "draft",
-        "age_days": 12,
+        "age_days": 18,
         "user": "Nicolas Raes"
-      },
-      {
-        "name": "S06239",
-        "partner": "Le Jardin Secret de Jill",
-        "channel": "Revendeurs",
-        "untaxed": 207.44,
-        "date": "2026-08-25",
-        "state": "draft",
-        "age_days": 6,
-        "user": "Teatower team"
-      },
-      {
-        "name": "S06241",
-        "partner": "Delhaize Le Lion S.A",
-        "channel": "GMS",
-        "untaxed": 200.2,
-        "date": "2026-08-25",
-        "state": "draft",
-        "age_days": 6,
-        "user": "Teatower team"
-      },
-      {
-        "name": "S06255",
-        "partner": "SPRL Durant-Rabaey",
-        "channel": "Revendeurs",
-        "untaxed": 200.19,
-        "date": "2026-08-27",
-        "state": "draft",
-        "age_days": 4,
-        "user": "Teatower team"
       }
     ]
   },
